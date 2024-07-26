@@ -1,5 +1,6 @@
+import sanitize from "xss"
 function TestComponent2(foo) {
-    // ruleid:react-dangerouslysetinnerhtml
-    let params = {smth: 'test123', dangerouslySetInnerHTML: {__html: foo},a:b};
+    // ok:react-dangerouslysetinnerhtml
+    let params = {smth: 'test123', dangerouslySetInnerHTML: {__html: sanitize(foo)},a:b};
     return React.createElement('div', params);
 }
