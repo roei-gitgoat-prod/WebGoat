@@ -3,19 +3,16 @@ module.exports = function searchProducts() {
     let criteria: any = req.query.q === "undefined" ? "" : req.query.q ?? "";
     criteria = criteria.length <= 200 ? criteria : criteria.substring(0, 200);
     // only allow apple or orange related searches
-    if (!criteria.startsWith("apple") || !criteria.startsWith("orange")) {
+    if (!criteria.startsWith("apple") && !criteria.startsWith("orange")) { // Use && instead of ||
       res.status(400).send();
       return;
     }
     models.sequelize
       .query(
-        "SELECT * FROM Products WHERE ((name LIKE '" +
-          criteria +
-          "' OR description LIKE '" +
-          criteria +
-          "') AND deletedAt IS NULL) ORDER BY name"
+        "SELECT * FROM Products WHERE ((name LIKE :criteria OR description LIKE :criteria) AND deletedAt IS NULL) ORDER BY name",
+        { replacements: { criteria: '%' + criteria + '%' }, type: QueryTypes.SELECT }
       )
-      .then(([products]: any) => {
+      .then((products: any) => { // No need for array destructuring, as Sequelize already returns the array of results directly
         const dataString = JSON.stringify(products);
         for (let i = 0; i < products.length; i++) {
           products[i].name = req.__(products[i].name);
