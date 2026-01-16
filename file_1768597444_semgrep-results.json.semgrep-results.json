@@ -1,0 +1,4802 @@
+{
+  "version": "1.10.0",
+  "results": [
+    {
+      "check_id": "c.lang.security.insecure-use-gets-fn.insecure-use-gets-fn",
+      "path": "c_app.c",
+      "start": {
+        "line": 163,
+        "col": 5,
+        "offset": 3875
+      },
+      "end": {
+        "line": 163,
+        "col": 17,
+        "offset": 3887
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Avoid 'gets()'. This function does not consider buffer boundaries and can lead to buffer overflows. Use 'fgets()' or 'gets_s()' instead.",
+        "metadata": {
+          "cwe": [
+            "CWE-676: Use of Potentially Dangerous Function"
+          ],
+          "references": [
+            "https://us-cert.cisa.gov/bsi/articles/knowledge/coding-practices/fgets-and-gets_s"
+          ],
+          "category": "security",
+          "technology": [
+            "c"
+          ],
+          "confidence": "MEDIUM",
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Dangerous Method or Function"
+          ],
+          "source": "https://semgrep.dev/r/c.lang.security.insecure-use-gets-fn.insecure-use-gets-fn",
+          "shortlink": "https://sg.run/dKqX",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 8834,
+              "rule_id": "GdU7OE",
+              "rv_id": 945170,
+              "url": "https://semgrep.dev/playground/r/YDTvRlQ/c.lang.security.insecure-use-gets-fn.insecure-use-gets-fn",
+              "version_id": "YDTvRlQ"
+            }
+          }
+        },
+        "severity": "ERROR",
+        "fingerprint": "2c224c4b1ee193f1cdb0f403e3a91e31dcc2f17484a7680c851bbd5b44d6e609aa2d70d4aab58512d8d8ceb43f944209dd59f8b5dda1d51c9cd4a1cc71365867_0",
+        "lines": "    gets(source);",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "c.lang.security.insecure-use-gets-fn.insecure-use-gets-fn",
+      "path": "c_app.c",
+      "start": {
+        "line": 166,
+        "col": 5,
+        "offset": 3934
+      },
+      "end": {
+        "line": 166,
+        "col": 15,
+        "offset": 3944
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Avoid 'gets()'. This function does not consider buffer boundaries and can lead to buffer overflows. Use 'fgets()' or 'gets_s()' instead.",
+        "metadata": {
+          "cwe": [
+            "CWE-676: Use of Potentially Dangerous Function"
+          ],
+          "references": [
+            "https://us-cert.cisa.gov/bsi/articles/knowledge/coding-practices/fgets-and-gets_s"
+          ],
+          "category": "security",
+          "technology": [
+            "c"
+          ],
+          "confidence": "MEDIUM",
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Dangerous Method or Function"
+          ],
+          "source": "https://semgrep.dev/r/c.lang.security.insecure-use-gets-fn.insecure-use-gets-fn",
+          "shortlink": "https://sg.run/dKqX",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 8834,
+              "rule_id": "GdU7OE",
+              "rv_id": 945170,
+              "url": "https://semgrep.dev/playground/r/YDTvRlQ/c.lang.security.insecure-use-gets-fn.insecure-use-gets-fn",
+              "version_id": "YDTvRlQ"
+            }
+          }
+        },
+        "severity": "ERROR",
+        "fingerprint": "2c224c4b1ee193f1cdb0f403e3a91e31dcc2f17484a7680c851bbd5b44d6e609aa2d70d4aab58512d8d8ceb43f944209dd59f8b5dda1d51c9cd4a1cc71365867_1",
+        "lines": "    gets(dest);",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "c.lang.security.insecure-use-gets-fn.insecure-use-gets-fn",
+      "path": "c_app.c",
+      "start": {
+        "line": 169,
+        "col": 5,
+        "offset": 3991
+      },
+      "end": {
+        "line": 169,
+        "col": 17,
+        "offset": 4003
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Avoid 'gets()'. This function does not consider buffer boundaries and can lead to buffer overflows. Use 'fgets()' or 'gets_s()' instead.",
+        "metadata": {
+          "cwe": [
+            "CWE-676: Use of Potentially Dangerous Function"
+          ],
+          "references": [
+            "https://us-cert.cisa.gov/bsi/articles/knowledge/coding-practices/fgets-and-gets_s"
+          ],
+          "category": "security",
+          "technology": [
+            "c"
+          ],
+          "confidence": "MEDIUM",
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Dangerous Method or Function"
+          ],
+          "source": "https://semgrep.dev/r/c.lang.security.insecure-use-gets-fn.insecure-use-gets-fn",
+          "shortlink": "https://sg.run/dKqX",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 8834,
+              "rule_id": "GdU7OE",
+              "rv_id": 945170,
+              "url": "https://semgrep.dev/playground/r/YDTvRlQ/c.lang.security.insecure-use-gets-fn.insecure-use-gets-fn",
+              "version_id": "YDTvRlQ"
+            }
+          }
+        },
+        "severity": "ERROR",
+        "fingerprint": "2c224c4b1ee193f1cdb0f403e3a91e31dcc2f17484a7680c851bbd5b44d6e609aa2d70d4aab58512d8d8ceb43f944209dd59f8b5dda1d51c9cd4a1cc71365867_2",
+        "lines": "    gets(buffer);",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "c.lang.security.insecure-use-scanf-fn.insecure-use-scanf-fn",
+      "path": "c_app.c",
+      "start": {
+        "line": 207,
+        "col": 5,
+        "offset": 4886
+      },
+      "end": {
+        "line": 207,
+        "col": 25,
+        "offset": 4906
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Avoid using 'scanf()'. This function, when used improperly, does not consider buffer boundaries and can lead to buffer overflows. Use 'fgets()' instead for reading input.",
+        "metadata": {
+          "cwe": [
+            "CWE-676: Use of Potentially Dangerous Function"
+          ],
+          "references": [
+            "http://sekrit.de/webdocs/c/beginners-guide-away-from-scanf.html"
+          ],
+          "category": "security",
+          "technology": [
+            "c"
+          ],
+          "confidence": "LOW",
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Dangerous Method or Function"
+          ],
+          "source": "https://semgrep.dev/r/c.lang.security.insecure-use-scanf-fn.insecure-use-scanf-fn",
+          "shortlink": "https://sg.run/nd1g",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 8836,
+              "rule_id": "AbUzPd",
+              "rv_id": 945173,
+              "url": "https://semgrep.dev/playground/r/zyTlkWW/c.lang.security.insecure-use-scanf-fn.insecure-use-scanf-fn",
+              "version_id": "zyTlkWW"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "59e4eb36b79bafb9813eefcae0ba72ae4ce83eb1c12361236a84a88503ee3e71ed355adefbafe6aa59aafb815c3335f139227349a27187c8202021e461b33232_0",
+        "lines": "    scanf(\"%d\", &choice);",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "c.lang.security.insecure-use-strtok-fn.insecure-use-strtok-fn",
+      "path": "c_app.c",
+      "start": {
+        "line": 335,
+        "col": 13,
+        "offset": 8186
+      },
+      "end": {
+        "line": 335,
+        "col": 34,
+        "offset": 8207
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Avoid using 'strtok()'. This function directly modifies the first argument buffer, permanently erasing the delimiter character. Use 'strtok_r()' instead.",
+        "metadata": {
+          "cwe": [
+            "CWE-676: Use of Potentially Dangerous Function"
+          ],
+          "references": [
+            "https://wiki.sei.cmu.edu/confluence/display/c/STR06-C.+Do+not+assume+that+strtok%28%29+leaves+the+parse+string+unchanged",
+            "https://man7.org/linux/man-pages/man3/strtok.3.html#BUGS",
+            "https://stackoverflow.com/a/40335556"
+          ],
+          "category": "security",
+          "technology": [
+            "c"
+          ],
+          "confidence": "LOW",
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Dangerous Method or Function"
+          ],
+          "source": "https://semgrep.dev/r/c.lang.security.insecure-use-strtok-fn.insecure-use-strtok-fn",
+          "shortlink": "https://sg.run/LwqG",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 8839,
+              "rule_id": "WAUo5v",
+              "rv_id": 1028278,
+              "url": "https://semgrep.dev/playground/r/qkTx1oq/c.lang.security.insecure-use-strtok-fn.insecure-use-strtok-fn",
+              "version_id": "qkTx1oq"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "2009a1f19df16886bbb95368625282c0eb081c0988083f8e0cf36d48d962b5511c37e773a54cfebffe4554e830a80dd9cce37bd44384245e97c02a847a3a82b0_0",
+        "lines": "    token = strtok(cmd_copy, \" \");",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "c.lang.security.insecure-use-strtok-fn.insecure-use-strtok-fn",
+      "path": "c_app.c",
+      "start": {
+        "line": 339,
+        "col": 17,
+        "offset": 8312
+      },
+      "end": {
+        "line": 339,
+        "col": 34,
+        "offset": 8329
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Avoid using 'strtok()'. This function directly modifies the first argument buffer, permanently erasing the delimiter character. Use 'strtok_r()' instead.",
+        "metadata": {
+          "cwe": [
+            "CWE-676: Use of Potentially Dangerous Function"
+          ],
+          "references": [
+            "https://wiki.sei.cmu.edu/confluence/display/c/STR06-C.+Do+not+assume+that+strtok%28%29+leaves+the+parse+string+unchanged",
+            "https://man7.org/linux/man-pages/man3/strtok.3.html#BUGS",
+            "https://stackoverflow.com/a/40335556"
+          ],
+          "category": "security",
+          "technology": [
+            "c"
+          ],
+          "confidence": "LOW",
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Dangerous Method or Function"
+          ],
+          "source": "https://semgrep.dev/r/c.lang.security.insecure-use-strtok-fn.insecure-use-strtok-fn",
+          "shortlink": "https://sg.run/LwqG",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 8839,
+              "rule_id": "WAUo5v",
+              "rv_id": 1028278,
+              "url": "https://semgrep.dev/playground/r/qkTx1oq/c.lang.security.insecure-use-strtok-fn.insecure-use-strtok-fn",
+              "version_id": "qkTx1oq"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "2009a1f19df16886bbb95368625282c0eb081c0988083f8e0cf36d48d962b5511c37e773a54cfebffe4554e830a80dd9cce37bd44384245e97c02a847a3a82b0_1",
+        "lines": "        token = strtok(NULL, \" \");",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "go.lang.security.audit.net.use-tls.use-tls",
+      "path": "go_app.go",
+      "start": {
+        "line": 24,
+        "col": 12,
+        "offset": 480
+      },
+      "end": {
+        "line": 24,
+        "col": 45,
+        "offset": 513
+      },
+      "extra": {
+        "metavars": {
+          "$ADDR": {
+            "start": {
+              "line": 24,
+              "col": 32,
+              "offset": 500
+            },
+            "end": {
+              "line": 24,
+              "col": 39,
+              "offset": 507
+            },
+            "abstract_content": "\":8086\""
+          },
+          "$HANDLER": {
+            "start": {
+              "line": 24,
+              "col": 41,
+              "offset": 509
+            },
+            "end": {
+              "line": 24,
+              "col": 44,
+              "offset": 512
+            },
+            "abstract_content": "nil"
+          }
+        },
+        "message": "Found an HTTP server without TLS. Use 'http.ListenAndServeTLS' instead. See https://golang.org/pkg/net/http/#ListenAndServeTLS for more information.",
+        "fix": "http.ListenAndServeTLS(\":8086\", certFile, keyFile, nil)",
+        "metadata": {
+          "cwe": [
+            "CWE-319: Cleartext Transmission of Sensitive Information"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures"
+          ],
+          "references": [
+            "https://golang.org/pkg/net/http/#ListenAndServeTLS"
+          ],
+          "category": "security",
+          "technology": [
+            "go"
+          ],
+          "confidence": "MEDIUM",
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Mishandled Sensitive Information"
+          ],
+          "source": "https://semgrep.dev/r/go.lang.security.audit.net.use-tls.use-tls",
+          "shortlink": "https://sg.run/dKbY",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9134,
+              "rule_id": "PeUZ8X",
+              "rv_id": 945587,
+              "url": "https://semgrep.dev/playground/r/NdTqkJK/go.lang.security.audit.net.use-tls.use-tls",
+              "version_id": "NdTqkJK"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "201788ba3de1037894dc8aa7f139830ea0aac0e349d24fd2cd6c45d27bed3b6c74ebb3661143329aab82865633c1746d4797bf0765bcdb524aea4e453eaf5a1f_0",
+        "lines": "\tlog.Fatal(http.ListenAndServe(\":8086\", nil))",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "go.lang.security.audit.xss.no-direct-write-to-responsewriter.no-direct-write-to-responsewriter",
+      "path": "go_app.go",
+      "start": {
+        "line": 62,
+        "col": 2,
+        "offset": 1577
+      },
+      "end": {
+        "line": 62,
+        "col": 18,
+        "offset": 1593
+      },
+      "extra": {
+        "metavars": {
+          "$HANDLER": {
+            "start": {
+              "line": 43,
+              "col": 6,
+              "offset": 1069
+            },
+            "end": {
+              "line": 43,
+              "col": 21,
+              "offset": 1084
+            },
+            "abstract_content": "readFileHandler"
+          },
+          "$WRITER": {
+            "start": {
+              "line": 62,
+              "col": 2,
+              "offset": 1577
+            },
+            "end": {
+              "line": 62,
+              "col": 3,
+              "offset": 1578
+            },
+            "abstract_content": "w"
+          }
+        },
+        "message": "Detected directly writing or similar in 'http.ResponseWriter.write()'. This bypasses HTML escaping that prevents cross-site scripting vulnerabilities. Instead, use the 'html/template' package and render data using 'template.Execute()'.",
+        "metadata": {
+          "category": "security",
+          "cwe": [
+            "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+          ],
+          "owasp": [
+            "A07:2017 - Cross-Site Scripting (XSS)",
+            "A03:2021 - Injection"
+          ],
+          "references": [
+            "https://blogtitle.github.io/robn-go-security-pearls-cross-site-scripting-xss/"
+          ],
+          "technology": [
+            "go"
+          ],
+          "confidence": "LOW",
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cross-Site-Scripting (XSS)"
+          ],
+          "source": "https://semgrep.dev/r/go.lang.security.audit.xss.no-direct-write-to-responsewriter.no-direct-write-to-responsewriter",
+          "shortlink": "https://sg.run/EkbA",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9137,
+              "rule_id": "GdU71y",
+              "rv_id": 945597,
+              "url": "https://semgrep.dev/playground/r/ExTg26w/go.lang.security.audit.xss.no-direct-write-to-responsewriter.no-direct-write-to-responsewriter",
+              "version_id": "ExTg26w"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "3f7950a864ecf5543a93fb4059b27a687aa35e13fae3149cbb9464a44367e84abf108d8ae76c54fc5f06cad98d9572cbb44b7f709ebc89b81a7451d6ac292268_0",
+        "lines": "\tw.Write(content)",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "go.lang.security.audit.xss.no-fprintf-to-responsewriter.no-fprintf-to-responsewriter",
+      "path": "go_app.go",
+      "start": {
+        "line": 91,
+        "col": 2,
+        "offset": 2381
+      },
+      "end": {
+        "line": 91,
+        "col": 21,
+        "offset": 2400
+      },
+      "extra": {
+        "metavars": {
+          "$HANDLER": {
+            "start": {
+              "line": 65,
+              "col": 6,
+              "offset": 1602
+            },
+            "end": {
+              "line": 65,
+              "col": 23,
+              "offset": 1619
+            },
+            "abstract_content": "systemInfoHandler"
+          },
+          "$PRINTF": {
+            "start": {
+              "line": 91,
+              "col": 6,
+              "offset": 2385
+            },
+            "end": {
+              "line": 91,
+              "col": 12,
+              "offset": 2391
+            },
+            "abstract_content": "Fprint"
+          },
+          "$WRITER": {
+            "start": {
+              "line": 91,
+              "col": 13,
+              "offset": 2392
+            },
+            "end": {
+              "line": 91,
+              "col": 14,
+              "offset": 2393
+            },
+            "abstract_content": "w"
+          }
+        },
+        "message": "Detected 'Fprintf' or similar writing to 'http.ResponseWriter'. This bypasses HTML escaping that prevents cross-site scripting vulnerabilities. Instead, use the 'html/template' package to render data to users.",
+        "metadata": {
+          "owasp": [
+            "A07:2017 - Cross-Site Scripting (XSS)",
+            "A03:2021 - Injection"
+          ],
+          "cwe": [
+            "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+          ],
+          "references": [
+            "https://blogtitle.github.io/robn-go-security-pearls-cross-site-scripting-xss/"
+          ],
+          "category": "security",
+          "technology": [
+            "go"
+          ],
+          "confidence": "LOW",
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cross-Site-Scripting (XSS)"
+          ],
+          "source": "https://semgrep.dev/r/go.lang.security.audit.xss.no-fprintf-to-responsewriter.no-fprintf-to-responsewriter",
+          "shortlink": "https://sg.run/7oqR",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9138,
+              "rule_id": "ReUgyJ",
+              "rv_id": 945598,
+              "url": "https://semgrep.dev/playground/r/7ZTrQPA/go.lang.security.audit.xss.no-fprintf-to-responsewriter.no-fprintf-to-responsewriter",
+              "version_id": "7ZTrQPA"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "3d43e85859c9d0b22210109f7837fb61c21add7a5b523f8534706a0a8da8e782e94daa4856a84d654778aa108d4b25ae591e44b3c0a1a851fde83bcc414c0919_0",
+        "lines": "\tfmt.Fprint(w, info)",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "go.lang.security.audit.xss.no-fprintf-to-responsewriter.no-fprintf-to-responsewriter",
+      "path": "go_app.go",
+      "start": {
+        "line": 126,
+        "col": 2,
+        "offset": 3164
+      },
+      "end": {
+        "line": 126,
+        "col": 59,
+        "offset": 3221
+      },
+      "extra": {
+        "metavars": {
+          "$HANDLER": {
+            "start": {
+              "line": 94,
+              "col": 6,
+              "offset": 2409
+            },
+            "end": {
+              "line": 94,
+              "col": 23,
+              "offset": 2426
+            },
+            "abstract_content": "deleteFileHandler"
+          },
+          "$PRINTF": {
+            "start": {
+              "line": 126,
+              "col": 6,
+              "offset": 3168
+            },
+            "end": {
+              "line": 126,
+              "col": 13,
+              "offset": 3175
+            },
+            "abstract_content": "Fprintf"
+          },
+          "$WRITER": {
+            "start": {
+              "line": 126,
+              "col": 14,
+              "offset": 3176
+            },
+            "end": {
+              "line": 126,
+              "col": 15,
+              "offset": 3177
+            },
+            "abstract_content": "w"
+          }
+        },
+        "message": "Detected 'Fprintf' or similar writing to 'http.ResponseWriter'. This bypasses HTML escaping that prevents cross-site scripting vulnerabilities. Instead, use the 'html/template' package to render data to users.",
+        "metadata": {
+          "owasp": [
+            "A07:2017 - Cross-Site Scripting (XSS)",
+            "A03:2021 - Injection"
+          ],
+          "cwe": [
+            "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+          ],
+          "references": [
+            "https://blogtitle.github.io/robn-go-security-pearls-cross-site-scripting-xss/"
+          ],
+          "category": "security",
+          "technology": [
+            "go"
+          ],
+          "confidence": "LOW",
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cross-Site-Scripting (XSS)"
+          ],
+          "source": "https://semgrep.dev/r/go.lang.security.audit.xss.no-fprintf-to-responsewriter.no-fprintf-to-responsewriter",
+          "shortlink": "https://sg.run/7oqR",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9138,
+              "rule_id": "ReUgyJ",
+              "rv_id": 945598,
+              "url": "https://semgrep.dev/playground/r/7ZTrQPA/go.lang.security.audit.xss.no-fprintf-to-responsewriter.no-fprintf-to-responsewriter",
+              "version_id": "7ZTrQPA"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "dbb255280c728b21cb9a20d43b63d76d26f448a24c2a12bbed8e5134d842df142760785ad0b324f884f9b3616e3046014a25436feb0e08afa4949c084924469b_0",
+        "lines": "\tfmt.Fprintf(w, \"File deleted successfully: %s\", filepath)",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "go.lang.security.audit.dangerous-exec-command.dangerous-exec-command",
+      "path": "go_app.go",
+      "start": {
+        "line": 154,
+        "col": 9,
+        "offset": 3793
+      },
+      "end": {
+        "line": 154,
+        "col": 47,
+        "offset": 3831
+      },
+      "extra": {
+        "metavars": {
+          "$CMD": {
+            "start": {
+              "line": 154,
+              "col": 39,
+              "offset": 3823
+            },
+            "end": {
+              "line": 154,
+              "col": 46,
+              "offset": 3830
+            },
+            "abstract_content": "command",
+            "propagated_value": {
+              "svalue_start": {
+                "line": 142,
+                "col": 13,
+                "offset": 3549
+              },
+              "svalue_end": {
+                "line": 142,
+                "col": 34,
+                "offset": 3570
+              },
+              "svalue_abstract_content": "r.Form.Get(\"command\")"
+            }
+          }
+        },
+        "message": "Detected non-static command inside Command. Audit the input to 'exec.Command'. If unverified user data can reach this call site, this is a code injection vulnerability. A malicious actor can inject a malicious script to execute arbitrary code.",
+        "metadata": {
+          "cwe": [
+            "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "go"
+          ],
+          "confidence": "LOW",
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Code Injection"
+          ],
+          "source": "https://semgrep.dev/r/go.lang.security.audit.dangerous-exec-command.dangerous-exec-command",
+          "shortlink": "https://sg.run/W8lA",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9109,
+              "rule_id": "X5U8RQ",
+              "rv_id": 945573,
+              "url": "https://semgrep.dev/playground/r/l4Tx916/go.lang.security.audit.dangerous-exec-command.dangerous-exec-command",
+              "version_id": "l4Tx916"
+            }
+          }
+        },
+        "severity": "ERROR",
+        "fingerprint": "83555e7ac54032e34b7cc34657866dd0d7ac1db4853540a4865c4df0a4a94b86599513d296e9c4510de662afc8ca92993f71b6da767bccc899d6345510f5351d_0",
+        "lines": "\tcmd := exec.Command(\"/bin/sh\", \"-c\", command)",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "go.lang.security.audit.xss.no-fprintf-to-responsewriter.no-fprintf-to-responsewriter",
+      "path": "go_app.go",
+      "start": {
+        "line": 162,
+        "col": 2,
+        "offset": 4044
+      },
+      "end": {
+        "line": 162,
+        "col": 55,
+        "offset": 4097
+      },
+      "extra": {
+        "metavars": {
+          "$HANDLER": {
+            "start": {
+              "line": 129,
+              "col": 6,
+              "offset": 3230
+            },
+            "end": {
+              "line": 129,
+              "col": 24,
+              "offset": 3248
+            },
+            "abstract_content": "execCommandHandler"
+          },
+          "$PRINTF": {
+            "start": {
+              "line": 162,
+              "col": 6,
+              "offset": 4048
+            },
+            "end": {
+              "line": 162,
+              "col": 13,
+              "offset": 4055
+            },
+            "abstract_content": "Fprintf"
+          },
+          "$WRITER": {
+            "start": {
+              "line": 162,
+              "col": 14,
+              "offset": 4056
+            },
+            "end": {
+              "line": 162,
+              "col": 15,
+              "offset": 4057
+            },
+            "abstract_content": "w"
+          }
+        },
+        "message": "Detected 'Fprintf' or similar writing to 'http.ResponseWriter'. This bypasses HTML escaping that prevents cross-site scripting vulnerabilities. Instead, use the 'html/template' package to render data to users.",
+        "metadata": {
+          "owasp": [
+            "A07:2017 - Cross-Site Scripting (XSS)",
+            "A03:2021 - Injection"
+          ],
+          "cwe": [
+            "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+          ],
+          "references": [
+            "https://blogtitle.github.io/robn-go-security-pearls-cross-site-scripting-xss/"
+          ],
+          "category": "security",
+          "technology": [
+            "go"
+          ],
+          "confidence": "LOW",
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cross-Site-Scripting (XSS)"
+          ],
+          "source": "https://semgrep.dev/r/go.lang.security.audit.xss.no-fprintf-to-responsewriter.no-fprintf-to-responsewriter",
+          "shortlink": "https://sg.run/7oqR",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9138,
+              "rule_id": "ReUgyJ",
+              "rv_id": 945598,
+              "url": "https://semgrep.dev/playground/r/7ZTrQPA/go.lang.security.audit.xss.no-fprintf-to-responsewriter.no-fprintf-to-responsewriter",
+              "version_id": "7ZTrQPA"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "baa6601cda387365f3baaa135b43296bf7c87458669c4e9678bf289dc722add66f74c756531871f85d27846e82c271fdb17be3d1921da9e767e0e0022b5fda1c_0",
+        "lines": "\tfmt.Fprintf(w, \"Command output:\\n%s\", string(output))",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "go.lang.security.audit.xss.no-fprintf-to-responsewriter.no-fprintf-to-responsewriter",
+      "path": "go_app.go",
+      "start": {
+        "line": 194,
+        "col": 2,
+        "offset": 4853
+      },
+      "end": {
+        "line": 194,
+        "col": 62,
+        "offset": 4913
+      },
+      "extra": {
+        "metavars": {
+          "$HANDLER": {
+            "start": {
+              "line": 165,
+              "col": 6,
+              "offset": 4106
+            },
+            "end": {
+              "line": 165,
+              "col": 22,
+              "offset": 4122
+            },
+            "abstract_content": "writeFileHandler"
+          },
+          "$PRINTF": {
+            "start": {
+              "line": 194,
+              "col": 6,
+              "offset": 4857
+            },
+            "end": {
+              "line": 194,
+              "col": 13,
+              "offset": 4864
+            },
+            "abstract_content": "Fprintf"
+          },
+          "$WRITER": {
+            "start": {
+              "line": 194,
+              "col": 14,
+              "offset": 4865
+            },
+            "end": {
+              "line": 194,
+              "col": 15,
+              "offset": 4866
+            },
+            "abstract_content": "w"
+          }
+        },
+        "message": "Detected 'Fprintf' or similar writing to 'http.ResponseWriter'. This bypasses HTML escaping that prevents cross-site scripting vulnerabilities. Instead, use the 'html/template' package to render data to users.",
+        "metadata": {
+          "owasp": [
+            "A07:2017 - Cross-Site Scripting (XSS)",
+            "A03:2021 - Injection"
+          ],
+          "cwe": [
+            "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+          ],
+          "references": [
+            "https://blogtitle.github.io/robn-go-security-pearls-cross-site-scripting-xss/"
+          ],
+          "category": "security",
+          "technology": [
+            "go"
+          ],
+          "confidence": "LOW",
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cross-Site-Scripting (XSS)"
+          ],
+          "source": "https://semgrep.dev/r/go.lang.security.audit.xss.no-fprintf-to-responsewriter.no-fprintf-to-responsewriter",
+          "shortlink": "https://sg.run/7oqR",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9138,
+              "rule_id": "ReUgyJ",
+              "rv_id": 945598,
+              "url": "https://semgrep.dev/playground/r/7ZTrQPA/go.lang.security.audit.xss.no-fprintf-to-responsewriter.no-fprintf-to-responsewriter",
+              "version_id": "7ZTrQPA"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "fa1128dee3aa594d4ce91ae90ae3cb1bbd63915aaf659ab0b507fa8ba607bbe4ca9dff201a637481f08c34c711eb5b5d0a1ad31dd9e2eb58dcb29a44df923f2e_0",
+        "lines": "\tfmt.Fprintf(w, \"File written successfully to: %s\", fullPath)",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "java.lang.security.audit.crypto.unencrypted-socket.unencrypted-socket",
+      "path": "java_app.java",
+      "start": {
+        "line": 13,
+        "col": 41,
+        "offset": 359
+      },
+      "end": {
+        "line": 13,
+        "col": 63,
+        "offset": 381
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Detected use of a Java socket that is not encrypted. As a result, the traffic could be read by an attacker intercepting the network traffic. Use an SSLSocket created by 'SSLSocketFactory' or 'SSLServerSocketFactory' instead.",
+        "metadata": {
+          "functional-categories": [
+            "net::search::crypto-config::java.net"
+          ],
+          "cwe": [
+            "CWE-319: Cleartext Transmission of Sensitive Information"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures"
+          ],
+          "source-rule-url": "https://find-sec-bugs.github.io/bugs.htm#UNENCRYPTED_SOCKET",
+          "asvs": {
+            "control_id": "6.2.5 Insecure Algorithm",
+            "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x14-V6-Cryptography.md#v62-algorithms",
+            "section": "V6 Stored Cryptography Verification Requirements",
+            "version": "4"
+          },
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+          ],
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "MEDIUM",
+          "impact": "MEDIUM",
+          "confidence": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Mishandled Sensitive Information"
+          ],
+          "source": "https://semgrep.dev/r/java.lang.security.audit.crypto.unencrypted-socket.unencrypted-socket",
+          "shortlink": "https://sg.run/W8zA",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9197,
+              "rule_id": "BYUN3X",
+              "rv_id": 945666,
+              "url": "https://semgrep.dev/playground/r/RGTAgw9/java.lang.security.audit.crypto.unencrypted-socket.unencrypted-socket",
+              "version_id": "RGTAgw9"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "5046eee049c11da0a561dc1b62ecd5e62f3a3310bf606d8c1495c5f6b24fdff087fc966b6c4b64ab236d2e3cb85b5c043e90b4d60dbbd6f93599470a57a4fcd9_0",
+        "lines": "            ServerSocket serverSocket = new ServerSocket(PORT);",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "problem-based-packs.insecure-transport.js-node.using-http-server.using-http-server",
+      "path": "javascript_app.js",
+      "start": {
+        "line": 7,
+        "col": 16,
+        "offset": 173
+      },
+      "end": {
+        "line": 7,
+        "col": 20,
+        "offset": 177
+      },
+      "extra": {
+        "metavars": {
+          "$HTTP": {
+            "start": {
+              "line": 7,
+              "col": 16,
+              "offset": 173
+            },
+            "end": {
+              "line": 7,
+              "col": 20,
+              "offset": 177
+            },
+            "abstract_content": "http"
+          },
+          "$FUNC": {
+            "start": {
+              "line": 7,
+              "col": 21,
+              "offset": 178
+            },
+            "end": {
+              "line": 7,
+              "col": 33,
+              "offset": 190
+            },
+            "abstract_content": "createServer"
+          }
+        },
+        "message": "Checks for any usage of http servers instead of https servers. Encourages the usage of https protocol instead of http, which does not have TLS and is therefore unencrypted. Using http can lead to man-in-the-middle attacks in which the attacker is able to read sensitive information.",
+        "metadata": {
+          "likelihood": "LOW",
+          "impact": "MEDIUM",
+          "confidence": "LOW",
+          "category": "security",
+          "cwe": "CWE-319: Cleartext Transmission of Sensitive Information",
+          "owasp": [
+            "A02:2021 - Cryptographic Failures",
+            "A03:2017 - Sensitive Data Exposure"
+          ],
+          "references": [
+            "https://nodejs.org/api/http.html#http_class_http_agent",
+            "https://groups.google.com/g/rubyonrails-security/c/NCCsca7TEtY"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "technology": [
+            "node.js"
+          ],
+          "vulnerability": "Insecure Transport",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Mishandled Sensitive Information"
+          ],
+          "source": "https://semgrep.dev/r/problem-based-packs.insecure-transport.js-node.using-http-server.using-http-server",
+          "shortlink": "https://sg.run/x1zL",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9430,
+              "rule_id": "7KUQAE",
+              "rv_id": 946074,
+              "url": "https://semgrep.dev/playground/r/WrTEo9B/problem-based-packs.insecure-transport.js-node.using-http-server.using-http-server",
+              "version_id": "WrTEo9B"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "e39f1c5443f250d35a7fb9eae879af9af8218c3fc4e232cd9f4255e7657b96e4e9d10b85cc7f3ed169008969a0dbe518769773069e019b7410004bbd10283662_0",
+        "lines": "const server = http.createServer((req, res) => {",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "javascript.lang.security.detect-child-process.detect-child-process",
+      "path": "javascript_app.js",
+      "start": {
+        "line": 144,
+        "col": 10,
+        "offset": 4382
+      },
+      "end": {
+        "line": 144,
+        "col": 17,
+        "offset": 4389
+      },
+      "extra": {
+        "metavars": {
+          "$FUNC": {
+            "start": {
+              "line": 127,
+              "col": 39,
+              "offset": 3936
+            },
+            "end": {
+              "line": 127,
+              "col": 43,
+              "offset": 3940
+            },
+            "abstract_content": "body"
+          },
+          "$CMD": {
+            "start": {
+              "line": 144,
+              "col": 10,
+              "offset": 4382
+            },
+            "end": {
+              "line": 144,
+              "col": 17,
+              "offset": 4389
+            },
+            "abstract_content": "command",
+            "propagated_value": {
+              "svalue_start": {
+                "line": 130,
+                "col": 21,
+                "offset": 4044
+              },
+              "svalue_end": {
+                "line": 130,
+                "col": 31,
+                "offset": 4054
+              },
+              "svalue_abstract_content": "params.cmd"
+            }
+          }
+        },
+        "message": "Detected calls to child_process from a function argument `body`. This could lead to a command injection if the input is user controllable. Try to avoid calls to child_process, and if it is needed ensure user input is correctly sanitized or sandboxed. ",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection"
+          ],
+          "references": [
+            "https://cheatsheetseries.owasp.org/cheatsheets/Nodejs_Security_Cheat_Sheet.html#do-not-use-dangerous-functions"
+          ],
+          "source-rule-url": "https://github.com/nodesecurity/eslint-plugin-security/blob/master/rules/detect-child-process.js",
+          "category": "security",
+          "technology": [
+            "javascript"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Command Injection"
+          ],
+          "source": "https://semgrep.dev/r/javascript.lang.security.detect-child-process.detect-child-process",
+          "shortlink": "https://sg.run/l2lo",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9313,
+              "rule_id": "10UKNB",
+              "rv_id": 945887,
+              "url": "https://semgrep.dev/playground/r/yeT0n95/javascript.lang.security.detect-child-process.detect-child-process",
+              "version_id": "yeT0n95"
+            }
+          }
+        },
+        "severity": "ERROR",
+        "fingerprint": "9f127a7fa43d87f7d2c3b336ade1f919d617314f4ec9a508b9a8fc99a48853aa84fed0e30c0b8b5e79ffcc0c74fa4c469a94d3f2e3cc0244befc0bf28a81aa21_0",
+        "lines": "    exec(command, (error, stdout, stderr) => {",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "javascript_app.js",
+                "start": {
+                  "line": 127,
+                  "col": 39,
+                  "offset": 3936
+                },
+                "end": {
+                  "line": 127,
+                  "col": 43,
+                  "offset": 3940
+                }
+              },
+              "body"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "javascript_app.js",
+                "start": {
+                  "line": 127,
+                  "col": 39,
+                  "offset": 3936
+                },
+                "end": {
+                  "line": 127,
+                  "col": 43,
+                  "offset": 3940
+                }
+              },
+              "content": "body"
+            },
+            {
+              "location": {
+                "path": "javascript_app.js",
+                "start": {
+                  "line": 128,
+                  "col": 11,
+                  "offset": 3954
+                },
+                "end": {
+                  "line": 128,
+                  "col": 17,
+                  "offset": 3960
+                }
+              },
+              "content": "params"
+            },
+            {
+              "location": {
+                "path": "javascript_app.js",
+                "start": {
+                  "line": 130,
+                  "col": 11,
+                  "offset": 4034
+                },
+                "end": {
+                  "line": 130,
+                  "col": 18,
+                  "offset": 4041
+                }
+              },
+              "content": "command"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "javascript_app.js",
+                "start": {
+                  "line": 144,
+                  "col": 10,
+                  "offset": 4382
+                },
+                "end": {
+                  "line": 144,
+                  "col": 17,
+                  "offset": 4389
+                }
+              },
+              "command"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+      "path": "javascript_app.js",
+      "start": {
+        "line": 166,
+        "col": 42,
+        "offset": 5104
+      },
+      "end": {
+        "line": 166,
+        "col": 50,
+        "offset": 5112
+      },
+      "extra": {
+        "metavars": {
+          "$X": {
+            "start": {
+              "line": 155,
+              "col": 37,
+              "offset": 4764
+            },
+            "end": {
+              "line": 155,
+              "col": 41,
+              "offset": 4768
+            },
+            "abstract_content": "body"
+          },
+          "$PATH": {
+            "start": {
+              "line": 166,
+              "col": 24,
+              "offset": 5086
+            },
+            "end": {
+              "line": 166,
+              "col": 28,
+              "offset": 5090
+            },
+            "abstract_content": "path",
+            "propagated_value": {
+              "svalue_start": {
+                "line": 4,
+                "col": 14,
+                "offset": 97
+              },
+              "svalue_end": {
+                "line": 4,
+                "col": 29,
+                "offset": 112
+              },
+              "svalue_abstract_content": "require('path')"
+            }
+          },
+          "$SINK": {
+            "start": {
+              "line": 166,
+              "col": 42,
+              "offset": 5104
+            },
+            "end": {
+              "line": 166,
+              "col": 50,
+              "offset": 5112
+            },
+            "abstract_content": "filename",
+            "propagated_value": {
+              "svalue_start": {
+                "line": 157,
+                "col": 22,
+                "offset": 4833
+              },
+              "svalue_end": {
+                "line": 157,
+                "col": 37,
+                "offset": 4848
+              },
+              "svalue_abstract_content": "params.filename"
+            }
+          }
+        },
+        "message": "Detected possible user input going into a `path.join` or `path.resolve` function. This could possibly lead to a path traversal vulnerability,  where the attacker can access arbitrary files stored in the file system. Instead, be sure to sanitize or validate user input first.",
+        "metadata": {
+          "owasp": [
+            "A05:2017 - Broken Access Control",
+            "A01:2021 - Broken Access Control"
+          ],
+          "cwe": [
+            "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+          ],
+          "category": "security",
+          "references": [
+            "https://owasp.org/www-community/attacks/Path_Traversal"
+          ],
+          "technology": [
+            "javascript",
+            "node.js"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "LOW",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Path Traversal"
+          ],
+          "source": "https://semgrep.dev/r/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+          "shortlink": "https://sg.run/OPqk",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9331,
+              "rule_id": "8GUjrq",
+              "rv_id": 945875,
+              "url": "https://semgrep.dev/playground/r/qkT4jzX/javascript.lang.security.audit.path-traversal.path-join-resolve-traversal.path-join-resolve-traversal",
+              "version_id": "qkT4jzX"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "824defea7098064182aa399441b255c0c98384b5670655bd074dac3c1c612311e53237f1bb16b51acdc600131942b5d06e52f0214e7afe91e6deae43178717ec_0",
+        "lines": "    const uploadPath = path.join('/tmp', filename);",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "javascript_app.js",
+                "start": {
+                  "line": 155,
+                  "col": 37,
+                  "offset": 4764
+                },
+                "end": {
+                  "line": 155,
+                  "col": 41,
+                  "offset": 4768
+                }
+              },
+              "body"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "javascript_app.js",
+                "start": {
+                  "line": 155,
+                  "col": 37,
+                  "offset": 4764
+                },
+                "end": {
+                  "line": 155,
+                  "col": 41,
+                  "offset": 4768
+                }
+              },
+              "content": "body"
+            },
+            {
+              "location": {
+                "path": "javascript_app.js",
+                "start": {
+                  "line": 156,
+                  "col": 11,
+                  "offset": 4782
+                },
+                "end": {
+                  "line": 156,
+                  "col": 17,
+                  "offset": 4788
+                }
+              },
+              "content": "params"
+            },
+            {
+              "location": {
+                "path": "javascript_app.js",
+                "start": {
+                  "line": 157,
+                  "col": 11,
+                  "offset": 4822
+                },
+                "end": {
+                  "line": 157,
+                  "col": 19,
+                  "offset": 4830
+                }
+              },
+              "content": "filename"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "javascript_app.js",
+                "start": {
+                  "line": 166,
+                  "col": 42,
+                  "offset": 5104
+                },
+                "end": {
+                  "line": 166,
+                  "col": 50,
+                  "offset": 5112
+                }
+              },
+              "filename"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "kotlin.lang.security.unencrypted-socket.unencrypted-socket",
+      "path": "kotlin_app.kt",
+      "start": {
+        "line": 19,
+        "col": 28,
+        "offset": 504
+      },
+      "end": {
+        "line": 19,
+        "col": 46,
+        "offset": 522
+      },
+      "extra": {
+        "metavars": {},
+        "message": "This socket is not encrypted. The traffic could be read by an attacker intercepting the network traffic. Use an SSLSocket created by 'SSLSocketFactory' or 'SSLServerSocketFactory' instead",
+        "metadata": {
+          "cwe": [
+            "CWE-319: Cleartext Transmission of Sensitive Information"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures"
+          ],
+          "source-rule-url": "https://find-sec-bugs.github.io/bugs.htm#UNENCRYPTED_SOCKET",
+          "asvs": {
+            "control_id": "6.2.5 Insecure Algorithm",
+            "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x14-V6-Cryptography.md#v62-algorithms",
+            "section": "V6 Stored Cryptography Verification Requirements",
+            "version": "4"
+          },
+          "category": "security",
+          "technology": [
+            "kotlin"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "confidence": "LOW",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Mishandled Sensitive Information"
+          ],
+          "source": "https://semgrep.dev/r/kotlin.lang.security.unencrypted-socket.unencrypted-socket",
+          "shortlink": "https://sg.run/KXZd",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 14699,
+              "rule_id": "KxU76z",
+              "rv_id": 945945,
+              "url": "https://semgrep.dev/playground/r/7ZTrQj4/kotlin.lang.security.unencrypted-socket.unencrypted-socket",
+              "version_id": "7ZTrQj4"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "8e58f706a98d1a1526417567c468010ccfb09cfaed5dba98a57a35b480bbc97d038461606dc3e4e243769de886fd7bc34977f24c96073a3335ea10ff0e0f4c49_0",
+        "lines": "        val serverSocket = ServerSocket(8081)",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "php.lang.security.injection.tainted-sql-string.tainted-sql-string",
+      "path": "php_app.php",
+      "start": {
+        "line": 85,
+        "col": 18,
+        "offset": 2864
+      },
+      "end": {
+        "line": 85,
+        "col": 107,
+        "offset": 2953
+      },
+      "extra": {
+        "metavars": {
+          "$1": {
+            "start": {
+              "line": 1,
+              "col": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "col": 7,
+              "offset": 6
+            },
+            "abstract_content": "SELECT"
+          },
+          "$SQLSTR": {
+            "start": {
+              "line": 85,
+              "col": 19,
+              "offset": 2865
+            },
+            "end": {
+              "line": 85,
+              "col": 55,
+              "offset": 2901
+            },
+            "abstract_content": "SELECT * FROM users WHERE username='"
+          },
+          "$EXPR": {
+            "start": {
+              "line": 85,
+              "col": 59,
+              "offset": 2905
+            },
+            "end": {
+              "line": 85,
+              "col": 107,
+              "offset": 2953
+            },
+            "abstract_content": "$username\"' AND password='\"$password...\"'\""
+          }
+        },
+        "message": "User data flows into this manually-constructed SQL string. User data can be safely inserted into SQL strings using prepared statements or an object-relational mapper (ORM). Manually-constructed SQL strings is a possible indicator of SQL injection, which could let an attacker steal or manipulate data from the database. Instead, use prepared statements (`$mysqli->prepare(\"INSERT INTO test(id, label) VALUES (?, ?)\");`) or a safe library.",
+        "metadata": {
+          "cwe": [
+            "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection"
+          ],
+          "references": [
+            "https://owasp.org/www-community/attacks/SQL_Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "php"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "SQL Injection"
+          ],
+          "source": "https://semgrep.dev/r/php.lang.security.injection.tainted-sql-string.tainted-sql-string",
+          "shortlink": "https://sg.run/lZYG",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 14757,
+              "rule_id": "qNUXdL",
+              "rv_id": 1039629,
+              "url": "https://semgrep.dev/playground/r/7ZToWNO/php.lang.security.injection.tainted-sql-string.tainted-sql-string",
+              "version_id": "7ZToWNO"
+            }
+          }
+        },
+        "severity": "ERROR",
+        "fingerprint": "d3f41dfa773b4cff12151d74ff88513ef8b0a7ac89947aaf8b65d8ab1717a91cd757665862da4129ee94c97d009e5236703700488af6ee3997efd279d4c9a377_0",
+        "lines": "        $query = \"SELECT * FROM users WHERE username='\" . $username . \"' AND password='\" . $password . \"'\";",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 80,
+                  "col": 21,
+                  "offset": 2680
+                },
+                "end": {
+                  "line": 80,
+                  "col": 27,
+                  "offset": 2686
+                }
+              },
+              "$_POST"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "php_app.php",
+                "start": {
+                  "line": 80,
+                  "col": 9,
+                  "offset": 2668
+                },
+                "end": {
+                  "line": 80,
+                  "col": 18,
+                  "offset": 2677
+                }
+              },
+              "content": "$username"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 85,
+                  "col": 18,
+                  "offset": 2864
+                },
+                "end": {
+                  "line": 85,
+                  "col": 107,
+                  "offset": 2953
+                }
+              },
+              "\"SELECT * FROM users WHERE username='\" . $username . \"' AND password='\" . $password . \"'\""
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "php.lang.security.injection.tainted-filename.tainted-filename",
+      "path": "php_app.php",
+      "start": {
+        "line": 105,
+        "col": 25,
+        "offset": 3654
+      },
+      "end": {
+        "line": 105,
+        "col": 30,
+        "offset": 3659
+      },
+      "extra": {
+        "metavars": {
+          "$FILENAME": {
+            "start": {
+              "line": 105,
+              "col": 25,
+              "offset": 3654
+            },
+            "end": {
+              "line": 105,
+              "col": 30,
+              "offset": 3659
+            },
+            "abstract_content": "$file",
+            "propagated_value": {
+              "svalue_start": {
+                "line": 98,
+                "col": 17,
+                "offset": 3495
+              },
+              "svalue_end": {
+                "line": 98,
+                "col": 36,
+                "offset": 3514
+              },
+              "svalue_abstract_content": "$_GET['file']??''"
+            }
+          }
+        },
+        "message": "File name based on user input risks server-side request forgery.",
+        "metadata": {
+          "technology": [
+            "php"
+          ],
+          "category": "security",
+          "cwe": [
+            "CWE-918: Server-Side Request Forgery (SSRF)"
+          ],
+          "owasp": [
+            "A10:2021 - Server-Side Request Forgery (SSRF)"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "impact": "MEDIUM",
+          "likelihood": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Server-Side Request Forgery (SSRF)"
+          ],
+          "source": "https://semgrep.dev/r/php.lang.security.injection.tainted-filename.tainted-filename",
+          "shortlink": "https://sg.run/Ayqp",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 16250,
+              "rule_id": "5rUpro",
+              "rv_id": 945999,
+              "url": "https://semgrep.dev/playground/r/ZRT359j/php.lang.security.injection.tainted-filename.tainted-filename",
+              "version_id": "ZRT359j"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "eb6d85f5cc1396a3f701c53cb0b4afee7f7eafaa884cc49ae6846ff1b66974844cb43c954b7b6a0960f2f1ff69a1574fe2741a1cfa62b4af78a1368800bd8f6c_0",
+        "lines": "        if (file_exists($file)) {",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 98,
+                  "col": 17,
+                  "offset": 3495
+                },
+                "end": {
+                  "line": 98,
+                  "col": 22,
+                  "offset": 3500
+                }
+              },
+              "$_GET"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "php_app.php",
+                "start": {
+                  "line": 98,
+                  "col": 9,
+                  "offset": 3487
+                },
+                "end": {
+                  "line": 98,
+                  "col": 14,
+                  "offset": 3492
+                }
+              },
+              "content": "$file"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 105,
+                  "col": 25,
+                  "offset": 3654
+                },
+                "end": {
+                  "line": 105,
+                  "col": 30,
+                  "offset": 3659
+                }
+              },
+              "$file"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "php.lang.security.injection.tainted-filename.tainted-filename",
+      "path": "php_app.php",
+      "start": {
+        "line": 107,
+        "col": 36,
+        "offset": 3747
+      },
+      "end": {
+        "line": 107,
+        "col": 41,
+        "offset": 3752
+      },
+      "extra": {
+        "metavars": {
+          "$FILENAME": {
+            "start": {
+              "line": 107,
+              "col": 36,
+              "offset": 3747
+            },
+            "end": {
+              "line": 107,
+              "col": 41,
+              "offset": 3752
+            },
+            "abstract_content": "$file",
+            "propagated_value": {
+              "svalue_start": {
+                "line": 98,
+                "col": 17,
+                "offset": 3495
+              },
+              "svalue_end": {
+                "line": 98,
+                "col": 36,
+                "offset": 3514
+              },
+              "svalue_abstract_content": "$_GET['file']??''"
+            }
+          }
+        },
+        "message": "File name based on user input risks server-side request forgery.",
+        "metadata": {
+          "technology": [
+            "php"
+          ],
+          "category": "security",
+          "cwe": [
+            "CWE-918: Server-Side Request Forgery (SSRF)"
+          ],
+          "owasp": [
+            "A10:2021 - Server-Side Request Forgery (SSRF)"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "impact": "MEDIUM",
+          "likelihood": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Server-Side Request Forgery (SSRF)"
+          ],
+          "source": "https://semgrep.dev/r/php.lang.security.injection.tainted-filename.tainted-filename",
+          "shortlink": "https://sg.run/Ayqp",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 16250,
+              "rule_id": "5rUpro",
+              "rv_id": 945999,
+              "url": "https://semgrep.dev/playground/r/ZRT359j/php.lang.security.injection.tainted-filename.tainted-filename",
+              "version_id": "ZRT359j"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "eb6d85f5cc1396a3f701c53cb0b4afee7f7eafaa884cc49ae6846ff1b66974844cb43c954b7b6a0960f2f1ff69a1574fe2741a1cfa62b4af78a1368800bd8f6c_1",
+        "lines": "            echo file_get_contents($file);",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 98,
+                  "col": 17,
+                  "offset": 3495
+                },
+                "end": {
+                  "line": 98,
+                  "col": 22,
+                  "offset": 3500
+                }
+              },
+              "$_GET"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "php_app.php",
+                "start": {
+                  "line": 98,
+                  "col": 9,
+                  "offset": 3487
+                },
+                "end": {
+                  "line": 98,
+                  "col": 14,
+                  "offset": 3492
+                }
+              },
+              "content": "$file"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 107,
+                  "col": 36,
+                  "offset": 3747
+                },
+                "end": {
+                  "line": 107,
+                  "col": 41,
+                  "offset": 3752
+                }
+              },
+              "$file"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "php.lang.security.injection.tainted-filename.tainted-filename",
+      "path": "php_app.php",
+      "start": {
+        "line": 124,
+        "col": 31,
+        "offset": 4221
+      },
+      "end": {
+        "line": 124,
+        "col": 40,
+        "offset": 4230
+      },
+      "extra": {
+        "metavars": {
+          "$FILENAME": {
+            "start": {
+              "line": 124,
+              "col": 31,
+              "offset": 4221
+            },
+            "end": {
+              "line": 124,
+              "col": 40,
+              "offset": 4230
+            },
+            "abstract_content": "$filepath",
+            "propagated_value": {
+              "svalue_start": {
+                "line": 122,
+                "col": 21,
+                "offset": 4159
+              },
+              "svalue_end": {
+                "line": 122,
+                "col": 50,
+                "offset": 4188
+              },
+              "svalue_abstract_content": "$this->upload_dir.$filename"
+            }
+          }
+        },
+        "message": "File name based on user input risks server-side request forgery.",
+        "metadata": {
+          "technology": [
+            "php"
+          ],
+          "category": "security",
+          "cwe": [
+            "CWE-918: Server-Side Request Forgery (SSRF)"
+          ],
+          "owasp": [
+            "A10:2021 - Server-Side Request Forgery (SSRF)"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "impact": "MEDIUM",
+          "likelihood": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Server-Side Request Forgery (SSRF)"
+          ],
+          "source": "https://semgrep.dev/r/php.lang.security.injection.tainted-filename.tainted-filename",
+          "shortlink": "https://sg.run/Ayqp",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 16250,
+              "rule_id": "5rUpro",
+              "rv_id": 945999,
+              "url": "https://semgrep.dev/playground/r/ZRT359j/php.lang.security.injection.tainted-filename.tainted-filename",
+              "version_id": "ZRT359j"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "3e3252d4aedb178a47654e58146da61cd2fbde08c32bbbaba8d7ab96649e2f9b935578c6d6ee7da7cd61187d03cee808ba5c8a8faf661ce4ed291efd4ffbd727_0",
+        "lines": "        if (file_put_contents($filepath, $content)) {",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 114,
+                  "col": 21,
+                  "offset": 3922
+                },
+                "end": {
+                  "line": 114,
+                  "col": 27,
+                  "offset": 3928
+                }
+              },
+              "$_POST"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "php_app.php",
+                "start": {
+                  "line": 114,
+                  "col": 9,
+                  "offset": 3910
+                },
+                "end": {
+                  "line": 114,
+                  "col": 18,
+                  "offset": 3919
+                }
+              },
+              "content": "$filename"
+            },
+            {
+              "location": {
+                "path": "php_app.php",
+                "start": {
+                  "line": 122,
+                  "col": 9,
+                  "offset": 4147
+                },
+                "end": {
+                  "line": 122,
+                  "col": 18,
+                  "offset": 4156
+                }
+              },
+              "content": "$filepath"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 124,
+                  "col": 31,
+                  "offset": 4221
+                },
+                "end": {
+                  "line": 124,
+                  "col": 40,
+                  "offset": 4230
+                }
+              },
+              "$filepath"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "php.lang.security.injection.tainted-exec.tainted-exec",
+      "path": "php_app.php",
+      "start": {
+        "line": 164,
+        "col": 9,
+        "offset": 5401
+      },
+      "end": {
+        "line": 164,
+        "col": 25,
+        "offset": 5417
+      },
+      "extra": {
+        "metavars": {},
+        "message": "User input is passed to a function that executes a shell command. This can lead to remote code execution.",
+        "metadata": {
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "category": "security",
+          "technology": [
+            "php"
+          ],
+          "owasp": [
+            "A03:2021 - Injection"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "subcategory": [
+            "vuln"
+          ],
+          "impact": "HIGH",
+          "likelihood": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Command Injection"
+          ],
+          "source": "https://semgrep.dev/r/php.lang.security.injection.tainted-exec.tainted-exec",
+          "shortlink": "https://sg.run/kxEEz",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 146572,
+              "rule_id": "10UOGG5",
+              "rv_id": 945998,
+              "url": "https://semgrep.dev/playground/r/d6TPj0R/php.lang.security.injection.tainted-exec.tainted-exec",
+              "version_id": "d6TPj0R"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "06eb3b543ebd3f96bd1fa63dc7d26a9203bc9ff6458dd16f63032a8c9bc9a2e0e5f5996a2f7301f659fd55d21afc3eb0ee329a49f2ab7c3e48e309b36376abf4_0",
+        "lines": "        system($command);",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 150,
+                  "col": 20,
+                  "offset": 5041
+                },
+                "end": {
+                  "line": 150,
+                  "col": 26,
+                  "offset": 5047
+                }
+              },
+              "$_POST"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "php_app.php",
+                "start": {
+                  "line": 150,
+                  "col": 9,
+                  "offset": 5030
+                },
+                "end": {
+                  "line": 150,
+                  "col": 17,
+                  "offset": 5038
+                }
+              },
+              "content": "$command"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 164,
+                  "col": 9,
+                  "offset": 5401
+                },
+                "end": {
+                  "line": 164,
+                  "col": 25,
+                  "offset": 5417
+                }
+              },
+              "system($command)"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "php.lang.security.tainted-exec.tainted-exec",
+      "path": "php_app.php",
+      "start": {
+        "line": 164,
+        "col": 9,
+        "offset": 5401
+      },
+      "end": {
+        "line": 164,
+        "col": 25,
+        "offset": 5417
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Executing non-constant commands. This can lead to command injection. You should use `escapeshellarg()` when using command.",
+        "metadata": {
+          "cwe": [
+            "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+          ],
+          "references": [
+            "https://www.stackhawk.com/blog/php-command-injection/",
+            "https://brightsec.com/blog/code-injection-php/",
+            "https://www.acunetix.com/websitesecurity/php-security-2/"
+          ],
+          "category": "security",
+          "technology": [
+            "php"
+          ],
+          "owasp": [
+            "A03:2021 - Injection"
+          ],
+          "cwe2022-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "HIGH",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Code Injection"
+          ],
+          "source": "https://semgrep.dev/r/php.lang.security.tainted-exec.tainted-exec",
+          "shortlink": "https://sg.run/JAkP",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 73146,
+              "rule_id": "9AUw06",
+              "rv_id": 946014,
+              "url": "https://semgrep.dev/playground/r/A8TJzKg/php.lang.security.tainted-exec.tainted-exec",
+              "version_id": "A8TJzKg"
+            }
+          }
+        },
+        "severity": "ERROR",
+        "fingerprint": "0b576f4364748f948efdf585a124a8e4549bae488e489dc2052866f48b4f609e71267d6682e5bd3bc767782c5676635512ba7062eaabfea1429eb7875bbe4ffb_0",
+        "lines": "        system($command);",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 150,
+                  "col": 20,
+                  "offset": 5041
+                },
+                "end": {
+                  "line": 150,
+                  "col": 26,
+                  "offset": 5047
+                }
+              },
+              "$_POST"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "php_app.php",
+                "start": {
+                  "line": 150,
+                  "col": 9,
+                  "offset": 5030
+                },
+                "end": {
+                  "line": 150,
+                  "col": 17,
+                  "offset": 5038
+                }
+              },
+              "content": "$command"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 164,
+                  "col": 9,
+                  "offset": 5401
+                },
+                "end": {
+                  "line": 164,
+                  "col": 25,
+                  "offset": 5417
+                }
+              },
+              "system($command)"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "php.lang.security.exec-use.exec-use",
+      "path": "php_app.php",
+      "start": {
+        "line": 164,
+        "col": 9,
+        "offset": 5401
+      },
+      "end": {
+        "line": 164,
+        "col": 26,
+        "offset": 5418
+      },
+      "extra": {
+        "metavars": {
+          "$FUNC": {
+            "start": {
+              "line": 164,
+              "col": 9,
+              "offset": 5401
+            },
+            "end": {
+              "line": 164,
+              "col": 15,
+              "offset": 5407
+            },
+            "abstract_content": "system"
+          }
+        },
+        "message": "Executing non-constant commands. This can lead to command injection.",
+        "metadata": {
+          "cwe": [
+            "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+          ],
+          "references": [
+            "https://github.com/FloeDesignTechnologies/phpcs-security-audit/blob/master/Security/Sniffs/BadFunctions/SystemExecFunctionsSniff.php"
+          ],
+          "category": "security",
+          "technology": [
+            "php"
+          ],
+          "owasp": [
+            "A03:2021 - Injection"
+          ],
+          "cwe2022-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Code Injection"
+          ],
+          "source": "https://semgrep.dev/r/php.lang.security.exec-use.exec-use",
+          "shortlink": "https://sg.run/5Q1j",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9391,
+              "rule_id": "qNUjye",
+              "rv_id": 945992,
+              "url": "https://semgrep.dev/playground/r/kbTYkBG/php.lang.security.exec-use.exec-use",
+              "version_id": "kbTYkBG"
+            }
+          }
+        },
+        "severity": "ERROR",
+        "fingerprint": "025c9f75d2a77fcbac826fc8d09644e440055639256d39b3155f48740c017eb0c85a18298154575e1c46aaca8e226338ba934c7b12e3478b9cecd0a6713df0ca_0",
+        "lines": "        system($command);",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "php.lang.security.unlink-use.unlink-use",
+      "path": "php_app.php",
+      "start": {
+        "line": 181,
+        "col": 13,
+        "offset": 5833
+      },
+      "end": {
+        "line": 181,
+        "col": 30,
+        "offset": 5850
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Using user input when deleting files with `unlink()` is potentially dangerous. A malicious actor could use this to modify or access files they have no right to.",
+        "metadata": {
+          "references": [
+            "https://www.php.net/manual/en/function.unlink",
+            "https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html"
+          ],
+          "category": "security",
+          "technology": [
+            "php"
+          ],
+          "owasp": [
+            "A05:2017 - Broken Access Control",
+            "A01:2021 - Broken Access Control"
+          ],
+          "cwe": [
+            "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "MEDIUM",
+          "confidence": "LOW",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Path Traversal"
+          ],
+          "source": "https://semgrep.dev/r/php.lang.security.unlink-use.unlink-use",
+          "shortlink": "https://sg.run/rYeR",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 13969,
+              "rule_id": "eqUzDE",
+              "rv_id": 946015,
+              "url": "https://semgrep.dev/playground/r/BjT1Nlb/php.lang.security.unlink-use.unlink-use",
+              "version_id": "BjT1Nlb"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "1380e972b27d838e966da1163cf8925bf00c625cc810bc25ebad9eeb412e2043015fe892261350019303e10d20d4729823838ca44396c5a30a7fec49370213d6_0",
+        "lines": "        if (unlink($filepath)) {",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "php.lang.security.injection.tainted-filename.tainted-filename",
+      "path": "php_app.php",
+      "start": {
+        "line": 181,
+        "col": 20,
+        "offset": 5840
+      },
+      "end": {
+        "line": 181,
+        "col": 29,
+        "offset": 5849
+      },
+      "extra": {
+        "metavars": {
+          "$FILENAME": {
+            "start": {
+              "line": 181,
+              "col": 20,
+              "offset": 5840
+            },
+            "end": {
+              "line": 181,
+              "col": 29,
+              "offset": 5849
+            },
+            "abstract_content": "$filepath",
+            "propagated_value": {
+              "svalue_start": {
+                "line": 169,
+                "col": 21,
+                "offset": 5544
+              },
+              "svalue_end": {
+                "line": 169,
+                "col": 45,
+                "offset": 5568
+              },
+              "svalue_abstract_content": "$_POST['filepath']??''"
+            }
+          }
+        },
+        "message": "File name based on user input risks server-side request forgery.",
+        "metadata": {
+          "technology": [
+            "php"
+          ],
+          "category": "security",
+          "cwe": [
+            "CWE-918: Server-Side Request Forgery (SSRF)"
+          ],
+          "owasp": [
+            "A10:2021 - Server-Side Request Forgery (SSRF)"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "impact": "MEDIUM",
+          "likelihood": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Server-Side Request Forgery (SSRF)"
+          ],
+          "source": "https://semgrep.dev/r/php.lang.security.injection.tainted-filename.tainted-filename",
+          "shortlink": "https://sg.run/Ayqp",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 16250,
+              "rule_id": "5rUpro",
+              "rv_id": 945999,
+              "url": "https://semgrep.dev/playground/r/ZRT359j/php.lang.security.injection.tainted-filename.tainted-filename",
+              "version_id": "ZRT359j"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "3e3252d4aedb178a47654e58146da61cd2fbde08c32bbbaba8d7ab96649e2f9b935578c6d6ee7da7cd61187d03cee808ba5c8a8faf661ce4ed291efd4ffbd727_1",
+        "lines": "        if (unlink($filepath)) {",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 169,
+                  "col": 21,
+                  "offset": 5544
+                },
+                "end": {
+                  "line": 169,
+                  "col": 27,
+                  "offset": 5550
+                }
+              },
+              "$_POST"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "php_app.php",
+                "start": {
+                  "line": 169,
+                  "col": 9,
+                  "offset": 5532
+                },
+                "end": {
+                  "line": 169,
+                  "col": 18,
+                  "offset": 5541
+                }
+              },
+              "content": "$filepath"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 181,
+                  "col": 20,
+                  "offset": 5840
+                },
+                "end": {
+                  "line": 181,
+                  "col": 29,
+                  "offset": 5849
+                }
+              },
+              "$filepath"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "php.lang.security.injection.tainted-sql-string.tainted-sql-string",
+      "path": "php_app.php",
+      "start": {
+        "line": 197,
+        "col": 16,
+        "offset": 6331
+      },
+      "end": {
+        "line": 197,
+        "col": 76,
+        "offset": 6391
+      },
+      "extra": {
+        "metavars": {
+          "$1": {
+            "start": {
+              "line": 1,
+              "col": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "col": 7,
+              "offset": 6
+            },
+            "abstract_content": "SELECT"
+          },
+          "$SQLSTR": {
+            "start": {
+              "line": 197,
+              "col": 17,
+              "offset": 6332
+            },
+            "end": {
+              "line": 197,
+              "col": 59,
+              "offset": 6374
+            },
+            "abstract_content": "SELECT * FROM users WHERE username LIKE '%"
+          },
+          "$EXPR": {
+            "start": {
+              "line": 197,
+              "col": 63,
+              "offset": 6378
+            },
+            "end": {
+              "line": 197,
+              "col": 76,
+              "offset": 6391
+            },
+            "abstract_content": "$query.\"%'\""
+          }
+        },
+        "message": "User data flows into this manually-constructed SQL string. User data can be safely inserted into SQL strings using prepared statements or an object-relational mapper (ORM). Manually-constructed SQL strings is a possible indicator of SQL injection, which could let an attacker steal or manipulate data from the database. Instead, use prepared statements (`$mysqli->prepare(\"INSERT INTO test(id, label) VALUES (?, ?)\");`) or a safe library.",
+        "metadata": {
+          "cwe": [
+            "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection"
+          ],
+          "references": [
+            "https://owasp.org/www-community/attacks/SQL_Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "php"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "SQL Injection"
+          ],
+          "source": "https://semgrep.dev/r/php.lang.security.injection.tainted-sql-string.tainted-sql-string",
+          "shortlink": "https://sg.run/lZYG",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 14757,
+              "rule_id": "qNUXdL",
+              "rv_id": 1039629,
+              "url": "https://semgrep.dev/playground/r/7ZToWNO/php.lang.security.injection.tainted-sql-string.tainted-sql-string",
+              "version_id": "7ZToWNO"
+            }
+          }
+        },
+        "severity": "ERROR",
+        "fingerprint": "bef878e714f09aa7fef388ab3309ce4d35025d9dfea31f5551845a62d78fea8145408bc7d39d75f02575ea24c5411d43854964d96e86581c38a5af8e0fe5cdde_0",
+        "lines": "        $sql = \"SELECT * FROM users WHERE username LIKE '%\" . $query . \"%'\";",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 189,
+                  "col": 18,
+                  "offset": 6120
+                },
+                "end": {
+                  "line": 189,
+                  "col": 23,
+                  "offset": 6125
+                }
+              },
+              "$_GET"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "php_app.php",
+                "start": {
+                  "line": 189,
+                  "col": 9,
+                  "offset": 6111
+                },
+                "end": {
+                  "line": 189,
+                  "col": 15,
+                  "offset": 6117
+                }
+              },
+              "content": "$query"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 197,
+                  "col": 16,
+                  "offset": 6331
+                },
+                "end": {
+                  "line": 197,
+                  "col": 76,
+                  "offset": 6391
+                }
+              },
+              "\"SELECT * FROM users WHERE username LIKE '%\" . $query . \"%'\""
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "php.lang.security.injection.tainted-sql-string.tainted-sql-string",
+      "path": "php_app.php",
+      "start": {
+        "line": 213,
+        "col": 21,
+        "offset": 6821
+      },
+      "end": {
+        "line": 213,
+        "col": 60,
+        "offset": 6860
+      },
+      "extra": {
+        "metavars": {
+          "$1": {
+            "start": {
+              "line": 1,
+              "col": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "col": 7,
+              "offset": 6
+            },
+            "abstract_content": "SELECT"
+          },
+          "$SQLSTR": {
+            "start": {
+              "line": 213,
+              "col": 22,
+              "offset": 6822
+            },
+            "end": {
+              "line": 213,
+              "col": 53,
+              "offset": 6853
+            },
+            "abstract_content": "SELECT * FROM users WHERE id = "
+          },
+          "$EXPR": {
+            "start": {
+              "line": 213,
+              "col": 57,
+              "offset": 6857
+            },
+            "end": {
+              "line": 213,
+              "col": 60,
+              "offset": 6860
+            },
+            "abstract_content": "$id",
+            "propagated_value": {
+              "svalue_start": {
+                "line": 211,
+                "col": 15,
+                "offset": 6780
+              },
+              "svalue_end": {
+                "line": 211,
+                "col": 33,
+                "offset": 6798
+              },
+              "svalue_abstract_content": "$_GET['id']??'1'"
+            }
+          }
+        },
+        "message": "User data flows into this manually-constructed SQL string. User data can be safely inserted into SQL strings using prepared statements or an object-relational mapper (ORM). Manually-constructed SQL strings is a possible indicator of SQL injection, which could let an attacker steal or manipulate data from the database. Instead, use prepared statements (`$mysqli->prepare(\"INSERT INTO test(id, label) VALUES (?, ?)\");`) or a safe library.",
+        "metadata": {
+          "cwe": [
+            "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"
+          ],
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection"
+          ],
+          "references": [
+            "https://owasp.org/www-community/attacks/SQL_Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "php"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "SQL Injection"
+          ],
+          "source": "https://semgrep.dev/r/php.lang.security.injection.tainted-sql-string.tainted-sql-string",
+          "shortlink": "https://sg.run/lZYG",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 14757,
+              "rule_id": "qNUXdL",
+              "rv_id": 1039629,
+              "url": "https://semgrep.dev/playground/r/7ZToWNO/php.lang.security.injection.tainted-sql-string.tainted-sql-string",
+              "version_id": "7ZToWNO"
+            }
+          }
+        },
+        "severity": "ERROR",
+        "fingerprint": "04e08cd3a29bced04a354a719aa686550bea8d92c46dcedddd5f20f92dcd552418f1caecd896aa03a708a88a77f78d85431a47e973886dfadcf6a2375ebeeee6_0",
+        "lines": "        $template = \"SELECT * FROM users WHERE id = \" . $id;",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 211,
+                  "col": 15,
+                  "offset": 6780
+                },
+                "end": {
+                  "line": 211,
+                  "col": 20,
+                  "offset": 6785
+                }
+              },
+              "$_GET"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "php_app.php",
+                "start": {
+                  "line": 211,
+                  "col": 9,
+                  "offset": 6774
+                },
+                "end": {
+                  "line": 211,
+                  "col": 12,
+                  "offset": 6777
+                }
+              },
+              "content": "$id"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "php_app.php",
+                "start": {
+                  "line": 213,
+                  "col": 21,
+                  "offset": 6821
+                },
+                "end": {
+                  "line": 213,
+                  "col": 60,
+                  "offset": 6860
+                }
+              },
+              "\"SELECT * FROM users WHERE id = \" . $id"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "python.lang.security.audit.subprocess-shell-true.subprocess-shell-true",
+      "path": "python_app.py",
+      "start": {
+        "line": 109,
+        "col": 52,
+        "offset": 3584
+      },
+      "end": {
+        "line": 109,
+        "col": 56,
+        "offset": 3588
+      },
+      "extra": {
+        "metavars": {
+          "$FUNC": {
+            "start": {
+              "line": 109,
+              "col": 33,
+              "offset": 3565
+            },
+            "end": {
+              "line": 109,
+              "col": 36,
+              "offset": 3568
+            },
+            "abstract_content": "run"
+          },
+          "$TRUE": {
+            "start": {
+              "line": 109,
+              "col": 52,
+              "offset": 3584
+            },
+            "end": {
+              "line": 109,
+              "col": 56,
+              "offset": 3588
+            },
+            "abstract_content": "True"
+          }
+        },
+        "message": "Found 'subprocess' function 'run' with 'shell=True'. This is dangerous because this call will spawn the command using a shell process. Doing so propagates current shell settings and variables, which makes it much easier for a malicious actor to execute commands. Use 'shell=False' instead.",
+        "fix": "False",
+        "metadata": {
+          "source-rule-url": "https://bandit.readthedocs.io/en/latest/plugins/b602_subprocess_popen_with_shell_equals_true.html",
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection"
+          ],
+          "cwe": [
+            "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+          ],
+          "references": [
+            "https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess",
+            "https://docs.python.org/3/library/subprocess.html"
+          ],
+          "category": "security",
+          "technology": [
+            "python"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "secure default"
+          ],
+          "likelihood": "HIGH",
+          "impact": "LOW",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Command Injection"
+          ],
+          "source": "https://semgrep.dev/r/python.lang.security.audit.subprocess-shell-true.subprocess-shell-true",
+          "shortlink": "https://sg.run/J92w",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9646,
+              "rule_id": "DbUpz2",
+              "rv_id": 946382,
+              "url": "https://semgrep.dev/playground/r/YDTvReW/python.lang.security.audit.subprocess-shell-true.subprocess-shell-true",
+              "version_id": "YDTvReW"
+            }
+          }
+        },
+        "severity": "ERROR",
+        "fingerprint": "2f884e1452200b8d1af27ff618ff749335a6a2fa802b55005201a438637372fc3701b5c7bd493866a06a75c3c43ffefd20aa13956a57ff2f54d5505abb6c2f8b_0",
+        "lines": "            result = subprocess.run(command, shell=True, capture_output=True, text=True)",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ruby.rails.security.injection.raw-html-format.raw-html-format",
+      "path": "ruby_app.rb",
+      "start": {
+        "line": 111,
+        "col": 51,
+        "offset": 3613
+      },
+      "end": {
+        "line": 111,
+        "col": 75,
+        "offset": 3637
+      },
+      "extra": {
+        "metavars": {
+          "$HTMLSTR": {
+            "start": {
+              "line": 111,
+              "col": 51,
+              "offset": 3613
+            },
+            "end": {
+              "line": 111,
+              "col": 75,
+              "offset": 3637
+            },
+            "abstract_content": "CGI.escapeHTML(username)"
+          }
+        },
+        "message": "Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassing secure methods of rendering HTML by manually constructing HTML and this could create a cross-site scripting vulnerability, which could let attackers steal sensitive user data. Use the `render template` and make template files which will safely render HTML instead, or inspect that the HTML is absolutely rendered safely with a function like `sanitize`.",
+        "metadata": {
+          "cwe": [
+            "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+          ],
+          "owasp": [
+            "A07:2017 - Cross-Site Scripting (XSS)",
+            "A03:2021 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "rails"
+          ],
+          "references": [
+            "https://www.netsparker.com/blog/web-security/preventing-xss-ruby-on-rails-web-applications/",
+            "https://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cross-Site-Scripting (XSS)"
+          ],
+          "source": "https://semgrep.dev/r/ruby.rails.security.injection.raw-html-format.raw-html-format",
+          "shortlink": "https://sg.run/b2JQ",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 14470,
+              "rule_id": "kxUwZX",
+              "rv_id": 946544,
+              "url": "https://semgrep.dev/playground/r/O9TX3PQ/ruby.rails.security.injection.raw-html-format.raw-html-format",
+              "version_id": "O9TX3PQ"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "969f92e453ae94bbb1bdc496b9ea0155326fe3282737ef2d431991dd0a0f285de20ce6b7910fd76b567ea42841ba3e427a9579bfb7551debf187e62a083c4e1d_0",
+        "lines": "      response.body = \"<h1>Login successful for #{CGI.escapeHTML(username)} with role #{CGI.escapeHTML(role)}</h1>\"",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 102,
+                  "col": 32,
+                  "offset": 3227
+                },
+                "end": {
+                  "line": 102,
+                  "col": 39,
+                  "offset": 3234
+                }
+              },
+              "request"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 102,
+                  "col": 5,
+                  "offset": 3200
+                },
+                "end": {
+                  "line": 102,
+                  "col": 11,
+                  "offset": 3206
+                }
+              },
+              "content": "params"
+            },
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 103,
+                  "col": 5,
+                  "offset": 3245
+                },
+                "end": {
+                  "line": 103,
+                  "col": 13,
+                  "offset": 3253
+                }
+              },
+              "content": "username"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 111,
+                  "col": 51,
+                  "offset": 3613
+                },
+                "end": {
+                  "line": 111,
+                  "col": 75,
+                  "offset": 3637
+                }
+              },
+              "CGI.escapeHTML(username)"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ruby.rails.security.injection.raw-html-format.raw-html-format",
+      "path": "ruby_app.rb",
+      "start": {
+        "line": 111,
+        "col": 89,
+        "offset": 3651
+      },
+      "end": {
+        "line": 111,
+        "col": 109,
+        "offset": 3671
+      },
+      "extra": {
+        "metavars": {
+          "$HTMLSTR": {
+            "start": {
+              "line": 111,
+              "col": 89,
+              "offset": 3651
+            },
+            "end": {
+              "line": 111,
+              "col": 109,
+              "offset": 3671
+            },
+            "abstract_content": "CGI.escapeHTML(role)"
+          }
+        },
+        "message": "Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassing secure methods of rendering HTML by manually constructing HTML and this could create a cross-site scripting vulnerability, which could let attackers steal sensitive user data. Use the `render template` and make template files which will safely render HTML instead, or inspect that the HTML is absolutely rendered safely with a function like `sanitize`.",
+        "metadata": {
+          "cwe": [
+            "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+          ],
+          "owasp": [
+            "A07:2017 - Cross-Site Scripting (XSS)",
+            "A03:2021 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "rails"
+          ],
+          "references": [
+            "https://www.netsparker.com/blog/web-security/preventing-xss-ruby-on-rails-web-applications/",
+            "https://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cross-Site-Scripting (XSS)"
+          ],
+          "source": "https://semgrep.dev/r/ruby.rails.security.injection.raw-html-format.raw-html-format",
+          "shortlink": "https://sg.run/b2JQ",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 14470,
+              "rule_id": "kxUwZX",
+              "rv_id": 946544,
+              "url": "https://semgrep.dev/playground/r/O9TX3PQ/ruby.rails.security.injection.raw-html-format.raw-html-format",
+              "version_id": "O9TX3PQ"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "b2a5987d5f75cd7a06d0b0057a7f72c4b77e2d4649b363d511ffcb791ea34a20d363b86a02c82d18b4c8c71e133f6f31402b04fd27e210de9ab7435103a78cc5_0",
+        "lines": "      response.body = \"<h1>Login successful for #{CGI.escapeHTML(username)} with role #{CGI.escapeHTML(role)}</h1>\"",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 102,
+                  "col": 32,
+                  "offset": 3227
+                },
+                "end": {
+                  "line": 102,
+                  "col": 39,
+                  "offset": 3234
+                }
+              },
+              "request"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 102,
+                  "col": 5,
+                  "offset": 3200
+                },
+                "end": {
+                  "line": 102,
+                  "col": 11,
+                  "offset": 3206
+                }
+              },
+              "content": "params"
+            },
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 105,
+                  "col": 5,
+                  "offset": 3325
+                },
+                "end": {
+                  "line": 105,
+                  "col": 9,
+                  "offset": 3329
+                }
+              },
+              "content": "role"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 111,
+                  "col": 89,
+                  "offset": 3651
+                },
+                "end": {
+                  "line": 111,
+                  "col": 109,
+                  "offset": 3671
+                }
+              },
+              "CGI.escapeHTML(role)"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ruby.rails.security.injection.raw-html-format.raw-html-format",
+      "path": "ruby_app.rb",
+      "start": {
+        "line": 129,
+        "col": 46,
+        "offset": 4099
+      },
+      "end": {
+        "line": 129,
+        "col": 66,
+        "offset": 4119
+      },
+      "extra": {
+        "metavars": {
+          "$HTMLSTR": {
+            "start": {
+              "line": 129,
+              "col": 46,
+              "offset": 4099
+            },
+            "end": {
+              "line": 129,
+              "col": 66,
+              "offset": 4119
+            },
+            "abstract_content": "CGI.escapeHTML(file)"
+          }
+        },
+        "message": "Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassing secure methods of rendering HTML by manually constructing HTML and this could create a cross-site scripting vulnerability, which could let attackers steal sensitive user data. Use the `render template` and make template files which will safely render HTML instead, or inspect that the HTML is absolutely rendered safely with a function like `sanitize`.",
+        "metadata": {
+          "cwe": [
+            "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+          ],
+          "owasp": [
+            "A07:2017 - Cross-Site Scripting (XSS)",
+            "A03:2021 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "rails"
+          ],
+          "references": [
+            "https://www.netsparker.com/blog/web-security/preventing-xss-ruby-on-rails-web-applications/",
+            "https://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cross-Site-Scripting (XSS)"
+          ],
+          "source": "https://semgrep.dev/r/ruby.rails.security.injection.raw-html-format.raw-html-format",
+          "shortlink": "https://sg.run/b2JQ",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 14470,
+              "rule_id": "kxUwZX",
+              "rv_id": 946544,
+              "url": "https://semgrep.dev/playground/r/O9TX3PQ/ruby.rails.security.injection.raw-html-format.raw-html-format",
+              "version_id": "O9TX3PQ"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "6f4076a8a43e6783242cbb1fcfc333229991b61ed1f2e405be7e307e8e9936d8ccdab9022dcb9b145a8c338a5c660608cc722bd9739d2918254de1e21085fa26_0",
+        "lines": "      response.body = \"<h1>File not found: #{CGI.escapeHTML(file)}</h1>\"",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 118,
+                  "col": 12,
+                  "offset": 3801
+                },
+                "end": {
+                  "line": 118,
+                  "col": 19,
+                  "offset": 3808
+                }
+              },
+              "request"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 118,
+                  "col": 5,
+                  "offset": 3794
+                },
+                "end": {
+                  "line": 118,
+                  "col": 9,
+                  "offset": 3798
+                }
+              },
+              "content": "file"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 129,
+                  "col": 46,
+                  "offset": 4099
+                },
+                "end": {
+                  "line": 129,
+                  "col": 66,
+                  "offset": 4119
+                }
+              },
+              "CGI.escapeHTML(file)"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ruby.rails.security.injection.raw-html-format.raw-html-format",
+      "path": "ruby_app.rb",
+      "start": {
+        "line": 147,
+        "col": 61,
+        "offset": 4575
+      },
+      "end": {
+        "line": 147,
+        "col": 85,
+        "offset": 4599
+      },
+      "extra": {
+        "metavars": {
+          "$HTMLSTR": {
+            "start": {
+              "line": 147,
+              "col": 61,
+              "offset": 4575
+            },
+            "end": {
+              "line": 147,
+              "col": 85,
+              "offset": 4599
+            },
+            "abstract_content": "CGI.escapeHTML(filepath)"
+          }
+        },
+        "message": "Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassing secure methods of rendering HTML by manually constructing HTML and this could create a cross-site scripting vulnerability, which could let attackers steal sensitive user data. Use the `render template` and make template files which will safely render HTML instead, or inspect that the HTML is absolutely rendered safely with a function like `sanitize`.",
+        "metadata": {
+          "cwe": [
+            "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+          ],
+          "owasp": [
+            "A07:2017 - Cross-Site Scripting (XSS)",
+            "A03:2021 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "rails"
+          ],
+          "references": [
+            "https://www.netsparker.com/blog/web-security/preventing-xss-ruby-on-rails-web-applications/",
+            "https://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cross-Site-Scripting (XSS)"
+          ],
+          "source": "https://semgrep.dev/r/ruby.rails.security.injection.raw-html-format.raw-html-format",
+          "shortlink": "https://sg.run/b2JQ",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 14470,
+              "rule_id": "kxUwZX",
+              "rv_id": 946544,
+              "url": "https://semgrep.dev/playground/r/O9TX3PQ/ruby.rails.security.injection.raw-html-format.raw-html-format",
+              "version_id": "O9TX3PQ"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "7927a6bcc91384749a67740db879f6363250b2049369ba4d8fc6d5332c6738b6ea5bac32654ed148ae2a316c7ffd4efce55ccc2ef2f43ba26ce29fe7bbd4b7a6_0",
+        "lines": "      response.body = \"<h1>File uploaded successfully to: #{CGI.escapeHTML(filepath)}</h1>\"",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 134,
+                  "col": 32,
+                  "offset": 4212
+                },
+                "end": {
+                  "line": 134,
+                  "col": 39,
+                  "offset": 4219
+                }
+              },
+              "request"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 134,
+                  "col": 5,
+                  "offset": 4185
+                },
+                "end": {
+                  "line": 134,
+                  "col": 11,
+                  "offset": 4191
+                }
+              },
+              "content": "params"
+            },
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 135,
+                  "col": 5,
+                  "offset": 4230
+                },
+                "end": {
+                  "line": 135,
+                  "col": 13,
+                  "offset": 4238
+                }
+              },
+              "content": "filename"
+            },
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 143,
+                  "col": 5,
+                  "offset": 4424
+                },
+                "end": {
+                  "line": 143,
+                  "col": 13,
+                  "offset": 4432
+                }
+              },
+              "content": "filepath"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 147,
+                  "col": 61,
+                  "offset": 4575
+                },
+                "end": {
+                  "line": 147,
+                  "col": 85,
+                  "offset": 4599
+                }
+              },
+              "CGI.escapeHTML(filepath)"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ruby.rails.security.injection.raw-html-format.raw-html-format",
+      "path": "ruby_app.rb",
+      "start": {
+        "line": 184,
+        "col": 50,
+        "offset": 5749
+      },
+      "end": {
+        "line": 184,
+        "col": 73,
+        "offset": 5772
+      },
+      "extra": {
+        "metavars": {
+          "$HTMLSTR": {
+            "start": {
+              "line": 184,
+              "col": 50,
+              "offset": 5749
+            },
+            "end": {
+              "line": 184,
+              "col": 73,
+              "offset": 5772
+            },
+            "abstract_content": "CGI.escapeHTML(logfile)"
+          }
+        },
+        "message": "Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassing secure methods of rendering HTML by manually constructing HTML and this could create a cross-site scripting vulnerability, which could let attackers steal sensitive user data. Use the `render template` and make template files which will safely render HTML instead, or inspect that the HTML is absolutely rendered safely with a function like `sanitize`.",
+        "metadata": {
+          "cwe": [
+            "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+          ],
+          "owasp": [
+            "A07:2017 - Cross-Site Scripting (XSS)",
+            "A03:2021 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "rails"
+          ],
+          "references": [
+            "https://www.netsparker.com/blog/web-security/preventing-xss-ruby-on-rails-web-applications/",
+            "https://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cross-Site-Scripting (XSS)"
+          ],
+          "source": "https://semgrep.dev/r/ruby.rails.security.injection.raw-html-format.raw-html-format",
+          "shortlink": "https://sg.run/b2JQ",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 14470,
+              "rule_id": "kxUwZX",
+              "rv_id": 946544,
+              "url": "https://semgrep.dev/playground/r/O9TX3PQ/ruby.rails.security.injection.raw-html-format.raw-html-format",
+              "version_id": "O9TX3PQ"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "f5308d11e44ee4c567a0bf5eeb35a0be1085aecff1e86b193a8a5932fb79d0f062645b077e85d8f94999d4322c6865d20dc6d9e81cdef48108623323a51e8fd6_0",
+        "lines": "      response.body = \"<h1>Log file not found: #{CGI.escapeHTML(logfile)}</h1>\"",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 173,
+                  "col": 15,
+                  "offset": 5411
+                },
+                "end": {
+                  "line": 173,
+                  "col": 22,
+                  "offset": 5418
+                }
+              },
+              "request"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 173,
+                  "col": 5,
+                  "offset": 5401
+                },
+                "end": {
+                  "line": 173,
+                  "col": 12,
+                  "offset": 5408
+                }
+              },
+              "content": "logfile"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 184,
+                  "col": 50,
+                  "offset": 5749
+                },
+                "end": {
+                  "line": 184,
+                  "col": 73,
+                  "offset": 5772
+                }
+              },
+              "CGI.escapeHTML(logfile)"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ruby.lang.security.no-eval.ruby-eval",
+      "path": "ruby_app.rb",
+      "start": {
+        "line": 205,
+        "col": 16,
+        "offset": 6280
+      },
+      "end": {
+        "line": 205,
+        "col": 26,
+        "offset": 6290
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Use of eval with user-controllable input detected. This can lead  to attackers running arbitrary code. Ensure external data does not  reach here, otherwise this is a security vulnerability. Consider  other ways to do this without eval.",
+        "metadata": {
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "MEDIUM",
+          "category": "security",
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "cwe": [
+            "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "source-rule-url": "https://github.com/presidentbeef/brakeman/blob/main/lib/brakeman/checks/check_evaluation.rb",
+          "subcategory": [
+            "vuln"
+          ],
+          "technology": [
+            "ruby",
+            "rails"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Code Injection"
+          ],
+          "source": "https://semgrep.dev/r/ruby.lang.security.no-eval.ruby-eval",
+          "shortlink": "https://sg.run/bDwZ",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9726,
+              "rule_id": "OrUGNk",
+              "rv_id": 946489,
+              "url": "https://semgrep.dev/playground/r/X0TL8bZ/ruby.lang.security.no-eval.ruby-eval",
+              "version_id": "X0TL8bZ"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "b7a11e5d1cc8ca33f7a847d662ba671ca0198ef62324deb84805deaf886fa96e0632c868f39f4570ccec69b570c8c1f43874b77c35ab9780cdd5520b557cbce6_0",
+        "lines": "      result = eval(code)",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 191,
+                  "col": 12,
+                  "offset": 5969
+                },
+                "end": {
+                  "line": 191,
+                  "col": 18,
+                  "offset": 5975
+                }
+              },
+              "params"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 191,
+                  "col": 5,
+                  "offset": 5962
+                },
+                "end": {
+                  "line": 191,
+                  "col": 9,
+                  "offset": 5966
+                }
+              },
+              "content": "code"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 205,
+                  "col": 16,
+                  "offset": 6280
+                },
+                "end": {
+                  "line": 205,
+                  "col": 26,
+                  "offset": 6290
+                }
+              },
+              "eval(code)"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ruby.rails.security.audit.avoid-tainted-file-access.avoid-tainted-file-access",
+      "path": "ruby_app.rb",
+      "start": {
+        "line": 228,
+        "col": 7,
+        "offset": 6900
+      },
+      "end": {
+        "line": 228,
+        "col": 28,
+        "offset": 6921
+      },
+      "extra": {
+        "metavars": {
+          "$X": {
+            "start": {
+              "line": 228,
+              "col": 12,
+              "offset": 6905
+            },
+            "end": {
+              "line": 228,
+              "col": 18,
+              "offset": 6911
+            },
+            "abstract_content": "delete"
+          }
+        },
+        "message": "Using user input when accessing files is potentially dangerous. A malicious actor could use this to modify or access files they have no right to.",
+        "metadata": {
+          "owasp": [
+            "A05:2017 - Broken Access Control",
+            "A01:2021 - Broken Access Control"
+          ],
+          "cwe": [
+            "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+          ],
+          "references": [
+            "https://github.com/presidentbeef/brakeman/blob/main/docs/warning_types/file_access/index.markdown"
+          ],
+          "category": "security",
+          "technology": [
+            "rails"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Path Traversal"
+          ],
+          "source": "https://semgrep.dev/r/ruby.rails.security.audit.avoid-tainted-file-access.avoid-tainted-file-access",
+          "shortlink": "https://sg.run/gYln",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 13585,
+              "rule_id": "DbU1dr",
+              "rv_id": 946498,
+              "url": "https://semgrep.dev/playground/r/w8TKJZR/ruby.rails.security.audit.avoid-tainted-file-access.avoid-tainted-file-access",
+              "version_id": "w8TKJZR"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "ef7e0bba3528f446be236d576961bd74199881d1013fbdee0688f6f9a08e6b6d3bb71444100dac9f9e9fd1439922b90d171b19fc849fb99920b07396690e65ba_0",
+        "lines": "      File.delete(filepath)",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 215,
+                  "col": 16,
+                  "offset": 6626
+                },
+                "end": {
+                  "line": 215,
+                  "col": 22,
+                  "offset": 6632
+                }
+              },
+              "params"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 215,
+                  "col": 5,
+                  "offset": 6615
+                },
+                "end": {
+                  "line": 215,
+                  "col": 13,
+                  "offset": 6623
+                }
+              },
+              "content": "filepath"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 228,
+                  "col": 7,
+                  "offset": 6900
+                },
+                "end": {
+                  "line": 228,
+                  "col": 28,
+                  "offset": 6921
+                }
+              },
+              "File.delete(filepath)"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ruby.rails.security.injection.raw-html-format.raw-html-format",
+      "path": "ruby_app.rb",
+      "start": {
+        "line": 229,
+        "col": 57,
+        "offset": 6978
+      },
+      "end": {
+        "line": 229,
+        "col": 81,
+        "offset": 7002
+      },
+      "extra": {
+        "metavars": {
+          "$HTMLSTR": {
+            "start": {
+              "line": 229,
+              "col": 57,
+              "offset": 6978
+            },
+            "end": {
+              "line": 229,
+              "col": 81,
+              "offset": 7002
+            },
+            "abstract_content": "CGI.escapeHTML(filepath)"
+          }
+        },
+        "message": "Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassing secure methods of rendering HTML by manually constructing HTML and this could create a cross-site scripting vulnerability, which could let attackers steal sensitive user data. Use the `render template` and make template files which will safely render HTML instead, or inspect that the HTML is absolutely rendered safely with a function like `sanitize`.",
+        "metadata": {
+          "cwe": [
+            "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+          ],
+          "owasp": [
+            "A07:2017 - Cross-Site Scripting (XSS)",
+            "A03:2021 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "rails"
+          ],
+          "references": [
+            "https://www.netsparker.com/blog/web-security/preventing-xss-ruby-on-rails-web-applications/",
+            "https://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cross-Site-Scripting (XSS)"
+          ],
+          "source": "https://semgrep.dev/r/ruby.rails.security.injection.raw-html-format.raw-html-format",
+          "shortlink": "https://sg.run/b2JQ",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 14470,
+              "rule_id": "kxUwZX",
+              "rv_id": 946544,
+              "url": "https://semgrep.dev/playground/r/O9TX3PQ/ruby.rails.security.injection.raw-html-format.raw-html-format",
+              "version_id": "O9TX3PQ"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "7927a6bcc91384749a67740db879f6363250b2049369ba4d8fc6d5332c6738b6ea5bac32654ed148ae2a316c7ffd4efce55ccc2ef2f43ba26ce29fe7bbd4b7a6_1",
+        "lines": "      response.body = \"<h1>File deleted successfully: #{CGI.escapeHTML(filepath)}</h1>\"",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 213,
+                  "col": 32,
+                  "offset": 6524
+                },
+                "end": {
+                  "line": 213,
+                  "col": 39,
+                  "offset": 6531
+                }
+              },
+              "request"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 213,
+                  "col": 5,
+                  "offset": 6497
+                },
+                "end": {
+                  "line": 213,
+                  "col": 11,
+                  "offset": 6503
+                }
+              },
+              "content": "params"
+            },
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 215,
+                  "col": 5,
+                  "offset": 6615
+                },
+                "end": {
+                  "line": 215,
+                  "col": 13,
+                  "offset": 6623
+                }
+              },
+              "content": "filepath"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 229,
+                  "col": 57,
+                  "offset": 6978
+                },
+                "end": {
+                  "line": 229,
+                  "col": 81,
+                  "offset": 7002
+                }
+              },
+              "CGI.escapeHTML(filepath)"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ruby.lang.security.dangerous-subshell.dangerous-subshell",
+      "path": "ruby_app.rb",
+      "start": {
+        "line": 251,
+        "col": 16,
+        "offset": 7677
+      },
+      "end": {
+        "line": 251,
+        "col": 33,
+        "offset": 7694
+      },
+      "extra": {
+        "metavars": {
+          "$VAL": {
+            "start": {
+              "line": 251,
+              "col": 19,
+              "offset": 7680
+            },
+            "end": {
+              "line": 251,
+              "col": 26,
+              "offset": 7687
+            },
+            "abstract_content": "command",
+            "propagated_value": {
+              "svalue_start": {
+                "line": 245,
+                "col": 15,
+                "offset": 7479
+              },
+              "svalue_end": {
+                "line": 245,
+                "col": 78,
+                "offset": 7542
+              },
+              "svalue_abstract_content": "\"\"\"\"tar -czf #{destination} /etc/passwd /etc/hosts #{@users_file}\""
+            }
+          }
+        },
+        "message": "Detected non-static command inside `...`. If unverified user data can reach this call site, this is a code injection vulnerability. A malicious actor can inject a malicious script to execute arbitrary code.",
+        "metadata": {
+          "cwe": [
+            "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "ruby"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Code Injection"
+          ],
+          "source": "https://semgrep.dev/r/ruby.lang.security.dangerous-subshell.dangerous-subshell",
+          "shortlink": "https://sg.run/NrxL",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9827,
+              "rule_id": "OrUGn8",
+              "rv_id": 946474,
+              "url": "https://semgrep.dev/playground/r/RGTAgzG/ruby.lang.security.dangerous-subshell.dangerous-subshell",
+              "version_id": "RGTAgzG"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "9111462bbd6c662ae870eee933ac8b39151bb5b8b14c0ccc4fcd578547630a46fc3b1fbb82b69db5f871398e746d592f88f2ec9737e47484e911a62ca2239ad2_0",
+        "lines": "      result = `#{command} 2>&1`",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ruby.rails.security.injection.raw-html-format.raw-html-format",
+      "path": "ruby_app.rb",
+      "start": {
+        "line": 270,
+        "col": 42,
+        "offset": 8218
+      },
+      "end": {
+        "line": 270,
+        "col": 63,
+        "offset": 8239
+      },
+      "extra": {
+        "metavars": {
+          "$HTMLSTR": {
+            "start": {
+              "line": 270,
+              "col": 42,
+              "offset": 8218
+            },
+            "end": {
+              "line": 270,
+              "col": 63,
+              "offset": 8239
+            },
+            "abstract_content": "CGI.escapeHTML(query)"
+          }
+        },
+        "message": "Detected user input flowing into a manually constructed HTML string. You may be accidentally bypassing secure methods of rendering HTML by manually constructing HTML and this could create a cross-site scripting vulnerability, which could let attackers steal sensitive user data. Use the `render template` and make template files which will safely render HTML instead, or inspect that the HTML is absolutely rendered safely with a function like `sanitize`.",
+        "metadata": {
+          "cwe": [
+            "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+          ],
+          "owasp": [
+            "A07:2017 - Cross-Site Scripting (XSS)",
+            "A03:2021 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "rails"
+          ],
+          "references": [
+            "https://www.netsparker.com/blog/web-security/preventing-xss-ruby-on-rails-web-applications/",
+            "https://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html"
+          ],
+          "cwe2022-top25": true,
+          "cwe2021-top25": true,
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "MEDIUM",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cross-Site-Scripting (XSS)"
+          ],
+          "source": "https://semgrep.dev/r/ruby.rails.security.injection.raw-html-format.raw-html-format",
+          "shortlink": "https://sg.run/b2JQ",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 14470,
+              "rule_id": "kxUwZX",
+              "rv_id": 946544,
+              "url": "https://semgrep.dev/playground/r/O9TX3PQ/ruby.rails.security.injection.raw-html-format.raw-html-format",
+              "version_id": "O9TX3PQ"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "b282fbbc418401d08de283167cb68751d8285e6a39d6e0221b3c96c9457f3a78ef342b4e2b993f20e252933da1d82584d9f54e3d43039a6f1bb202b01ca77c10_0",
+        "lines": "    response.body += \"<p>Search Query: #{CGI.escapeHTML(query)}</p>\"",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "dataflow_trace": {
+          "taint_source": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 259,
+                  "col": 12,
+                  "offset": 7866
+                },
+                "end": {
+                  "line": 259,
+                  "col": 19,
+                  "offset": 7873
+                }
+              },
+              "request"
+            ]
+          ],
+          "intermediate_vars": [
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 259,
+                  "col": 5,
+                  "offset": 7859
+                },
+                "end": {
+                  "line": 259,
+                  "col": 9,
+                  "offset": 7863
+                }
+              },
+              "content": "user"
+            },
+            {
+              "location": {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 267,
+                  "col": 5,
+                  "offset": 8063
+                },
+                "end": {
+                  "line": 267,
+                  "col": 10,
+                  "offset": 8068
+                }
+              },
+              "content": "query"
+            }
+          ],
+          "taint_sink": [
+            "CliLoc",
+            [
+              {
+                "path": "ruby_app.rb",
+                "start": {
+                  "line": 270,
+                  "col": 42,
+                  "offset": 8218
+                },
+                "end": {
+                  "line": 270,
+                  "col": 63,
+                  "offset": 8239
+                }
+              },
+              "CGI.escapeHTML(query)"
+            ]
+          ]
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ruby.lang.security.dangerous-subshell.dangerous-subshell",
+      "path": "ruby_app.rb",
+      "start": {
+        "line": 291,
+        "col": 22,
+        "offset": 8800
+      },
+      "end": {
+        "line": 291,
+        "col": 66,
+        "offset": 8844
+      },
+      "extra": {
+        "metavars": {
+          "$VAL": {
+            "start": {
+              "line": 291,
+              "col": 43,
+              "offset": 8821
+            },
+            "end": {
+              "line": 291,
+              "col": 51,
+              "offset": 8829
+            },
+            "abstract_content": "username",
+            "propagated_value": {
+              "svalue_start": {
+                "line": 280,
+                "col": 16,
+                "offset": 8499
+              },
+              "svalue_end": {
+                "line": 280,
+                "col": 41,
+                "offset": 8524
+              },
+              "svalue_abstract_content": "request.query[[['username']"
+            }
+          }
+        },
+        "message": "Detected non-static command inside `...`. If unverified user data can reach this call site, this is a code injection vulnerability. A malicious actor can inject a malicious script to execute arbitrary code.",
+        "metadata": {
+          "cwe": [
+            "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+          ],
+          "owasp": [
+            "A03:2021 - Injection"
+          ],
+          "category": "security",
+          "technology": [
+            "ruby"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A03_2021-Injection"
+          ],
+          "cwe2022-top25": true,
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "LOW",
+          "impact": "HIGH",
+          "confidence": "LOW",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Code Injection"
+          ],
+          "source": "https://semgrep.dev/r/ruby.lang.security.dangerous-subshell.dangerous-subshell",
+          "shortlink": "https://sg.run/NrxL",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9827,
+              "rule_id": "OrUGn8",
+              "rv_id": 946474,
+              "url": "https://semgrep.dev/playground/r/RGTAgzG/ruby.lang.security.dangerous-subshell.dangerous-subshell",
+              "version_id": "RGTAgzG"
+            }
+          }
+        },
+        "severity": "WARNING",
+        "fingerprint": "ed4094209c86e2903e1504a257fb7361e010cf577edbc609916cbdee3a73ac17f260f50156d6d86d1ece1724cf26eb614e6fe7cef8b8685aee0dd9e93e117314_0",
+        "lines": "      profile_data = `echo \"Profile for #{username}\"; whoami; id`",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "OSS"
+      }
+    }
+  ],
+  "errors": [
+    {
+      "code": 3,
+      "level": "warn",
+      "type": "Syntax error",
+      "message": "Syntax error at line results.json:1:\n missing element",
+      "path": "results.json"
+    }
+  ],
+  "paths": {
+    "scanned": [
+      ".DS_Store",
+      "README.md",
+      "ada_app.adb",
+      "assembly_app.asm",
+      "c_app.c",
+      "cobol_app.cbl",
+      "csharp_app.cs",
+      "fortran_app.f90",
+      "go_app.go",
+      "java_app.java",
+      "javascript_app.js",
+      "kotlin_app.kt",
+      "lua_app.lua",
+      "pascal_app.pas",
+      "perl_app.pl",
+      "php_app.php",
+      "powershell_app.ps1",
+      "python_app.py",
+      "results.json",
+      "rpg_app.rpgle",
+      "ruby_app.rb",
+      "rust_app.rs",
+      "vb_app.vb"
+    ]
+  },
+  "interfile_languages_used": [],
+  "skipped_rules": []
+}
